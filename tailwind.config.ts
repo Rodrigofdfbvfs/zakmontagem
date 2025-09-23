@@ -10,9 +10,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['Poppins', 'sans-serif'],
+        headline: ['Poppins', 'sans-serif'],
         code: ['monospace'],
+      },
+      fontWeight: {
+        light: '300',
+        bold: '700',
       },
       colors: {
         background: 'hsl(var(--background))',
