@@ -22,7 +22,10 @@ export default function HeroSection() {
       )}
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold font-headline leading-tight drop-shadow-lg">
+        <h2 className="text-2xl md:text-3xl font-bold text-primary tracking-wider drop-shadow-lg">
+          ZAAK MONTAGENS
+        </h2>
+        <h1 className="mt-2 text-4xl md:text-6xl font-bold font-headline leading-tight drop-shadow-lg">
           Seu móvel montado com <span className="text-primary">agilidade e experiência</span> em Salvador, Bahia.
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl font-light text-neutral-200 drop-shadow-md">
