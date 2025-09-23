@@ -92,17 +92,45 @@ body {
     mix-blend-mode: plus-lighter;
   }
 
-  @keyframes pulse-glow {
-    0%, 100% {
-      opacity: 0.4;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.8;
-      transform: scale(1.05);
-    }
+  .hero-bg-effect {
+    overflow: hidden;
+    background-color: #000;
   }
-  .animate-pulse-glow {
-    animation: pulse-glow 5s infinite ease-in-out;
+  
+  .hero-bg-effect::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+      pointer-events: none;
+  }
+  
+  .hero-bg-image {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+      filter: blur(200px);
+      animation: 12s linear infinite mov;
+      pointer-events: none;
+      z-index: 0;
+  }
+  
+  @keyframes mov{
+      0%, 100% {
+          transform: scale(1);
+          filter: blur(200px) saturate(1);
+      }
+      50% {
+          transform: scale(2);
+          filter: blur(200px) saturate(1.82);
+      }
   }
 }
