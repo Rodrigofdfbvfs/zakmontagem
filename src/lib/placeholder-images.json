@@ -2,13 +2,13 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Stylish living room with modern furniture.",
-      "imageUrl": "https://images.unsplash.com/photo-1526057565006-20beab8dd2ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU4NjAxMDc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern interior"
+      "description": "Sala de estar elegante com sofá e decoração moderna.",
+      "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdXJuaXR1cmV8ZW58MHx8fHwxNzE2NDEyNDg4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "living room"
     },
     {
       "id": "wood-texture",
-      "description": "Dark wood texture for background.",
+      "description": "Textura de madeira escura para background.",
       "imageUrl": "https://images.unsplash.com/photo-1618108487640-249b7e29d73e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFyayUyMHdvb2R8ZW58MHx8fHwxNzU4NTk0Nzk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dark wood"
     },
