@@ -1,26 +1,31 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
 export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
-
   return (
-    <section className="relative h-screen min-h-[700px] w-full flex items-center justify-center text-white">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          priority
-          className="object-cover"
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
-      <div className="absolute inset-0 bg-black/60" />
+    <section className="relative h-screen min-h-[700px] w-full flex items-center justify-center text-white overflow-hidden">
+      <div className="absolute inset-0 bg-black" />
+      
+      {/* Luzes de fundo */}
+      <div 
+        className="absolute top-[10%] left-[15%] w-72 h-72 bg-primary/20 rounded-full filter blur-3xl animate-pulse-glow"
+        style={{ animationDelay: '0s' }}
+      />
+      <div 
+        className="absolute bottom-[10%] right-[15%] w-96 h-96 bg-primary/20 rounded-full filter blur-3xl animate-pulse-glow"
+        style={{ animationDelay: '2.5s' }}
+      />
+       <div 
+        className="hidden md:block absolute top-[50%] right-[5%] w-60 h-60 bg-primary/10 rounded-full filter blur-3xl animate-pulse-glow"
+        style={{ animationDelay: '1s' }}
+      />
+       <div 
+        className="hidden md:block absolute bottom-[20%] left-[5%] w-52 h-52 bg-primary/10 rounded-full filter blur-3xl animate-pulse-glow"
+        style={{ animationDelay: '4s' }}
+      />
+
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-primary tracking-wider drop-shadow-lg">
           ZAAK MONTAGENS
