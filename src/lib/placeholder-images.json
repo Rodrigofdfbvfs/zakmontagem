@@ -8,9 +8,9 @@
     },
     {
       "id": "wood-texture",
-      "description": "Textura de madeira escura para background.",
-      "imageUrl": "https://images.unsplash.com/photo-1618108487640-249b7e29d73e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFyayUyMHdvb2R8ZW58MHx8fHwxNzU4NTk0Nzk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dark wood"
+      "description": "Textura de madeira clara para background.",
+      "imageUrl": "https://images.unsplash.com/photo-1533090481721-33f2b350b064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsaWdodCUyMHdvb2R8ZW58MHx8fHwxNzU4NjU0MTQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "light wood"
     },
     {
       "id": "gallery-1",

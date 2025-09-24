@@ -9,7 +9,7 @@ interface TexturedSectionProps {
   overlayOpacity?: string;
 }
 
-export const TexturedSection: FC<TexturedSectionProps> = ({ children, className, overlayOpacity = 'bg-black/80' }) => {
+export const TexturedSection: FC<TexturedSectionProps> = ({ children, className, overlayOpacity = 'bg-black/60' }) => {
   const woodTexture = PlaceHolderImages.find(p => p.id === 'wood-texture');
 
   return (
@@ -17,7 +17,7 @@ export const TexturedSection: FC<TexturedSectionProps> = ({ children, className,
       {woodTexture && (
         <Image
           src={woodTexture.imageUrl}
-          alt="Textura de madeira escura"
+          alt="Textura de madeira clara"
           fill
           className="object-cover"
           data-ai-hint={woodTexture.imageHint}
