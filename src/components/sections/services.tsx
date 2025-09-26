@@ -26,8 +26,7 @@ export default function ServicesSection() {
           <Card
             key={service.title}
             className={cn(
-              "bg-card-image border-0 rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1 relative",
-              "detalhe"
+              "bg-card-image border-0 rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1 gradient-border-card"
             )}
             style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
           >

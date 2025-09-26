@@ -39,8 +39,7 @@ export default function WhyChooseUsSection() {
           <div
             key={benefit.title}
             className={cn(
-              "bg-card-image border-0 rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-yellow-300/20 transition-all duration-300 transform hover:-translate-y-1 relative",
-              "detalhe"
+              "bg-card-image border-0 rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-yellow-300/20 transition-all duration-300 transform hover:-translate-y-1 gradient-border-card"
             )}
             style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
           >

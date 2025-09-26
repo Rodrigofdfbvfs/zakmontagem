@@ -111,40 +111,55 @@ body {
     @apply left-[50px];
   }
   
-  .detalhe::before{
+  .gradient-border-card {
+    z-index: 1;
+    position: relative;
+  }
+
+  .gradient-border-card::before {
     content: "";
     position: absolute;
+    z-index: -1;
+    border-radius: 0.5rem; /* igual ao rounded-lg do card */
+    pointer-events: none;
     top: 0;
-    left: 20px;
-    width: 80px;
-    height: 7px;
-    border-radius:10px;
-    background: hsl(var(--primary));
-    box-shadow: 0 10px 30px hsl(var(--primary));
-    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px; /* espessura da borda */
+    background: linear-gradient(-35deg, hsl(var(--primary)), transparent, transparent, hsl(var(--primary)));
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
 
   .cta-shine-effect {
     overflow: hidden;
+    position: relative;
   }
 
   .cta-shine-effect::before {
     content: "";
-    height: 100%;
-    width: 100%;
+    height: 150%;
+    width: 50px;
     position: absolute;
-    top: 0;
+    top: -25%;
     left: -100%;
-    opacity: 0;
     background: #ffffff;
     box-shadow: 0 0 30px 20px #ffffffaa;
     transform: skewX(-30deg);
     mix-blend-mode: plus-lighter;
     z-index: 1;
+    transition: left 0.8s ease-in-out;
   }
 
   .cta-shine-effect:hover::before {
-    animation: brilho 0.8s linear;
+    left: 120%;
   }
 }
 

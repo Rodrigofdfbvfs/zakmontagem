@@ -29,8 +29,7 @@ export default function HowItWorksSection() {
             <Card
               key={step.number}
               className={cn(
-                "bg-card-image border-0 text-center transition-transform duration-300 hover:-translate-y-2 relative",
-                "detalhe"
+                "bg-card-image border-0 text-center transition-transform duration-300 hover:-translate-y-2 gradient-border-card"
               )}
               style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
             >

@@ -44,7 +44,7 @@ export default function SocialProofSection() {
           size="lg"
           asChild
           className={cn(
-            "text-lg py-7 px-8 bg-card-image cta-shine-effect",
+            "text-lg font-bold py-7 px-8 bg-card-image cta-shine-effect border-2 border-transparent hover:border-primary-foreground",
           )}
           style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
         >
