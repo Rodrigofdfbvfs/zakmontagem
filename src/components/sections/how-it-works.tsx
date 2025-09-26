@@ -18,7 +18,7 @@ export default function HowItWorksSection() {
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
 
   return (
-    <TexturedSection>
+    <TexturedSection className="bg-black">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Como funciona</h2>
           <p className="mt-4 text-lg text-neutral-300 font-light">Processo simples, rápido e sem dor de cabeça.</p>
