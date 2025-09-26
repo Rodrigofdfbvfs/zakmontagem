@@ -15,7 +15,6 @@ const steps = [
 ];
 
 export default function HowItWorksSection() {
-  const sectionBg = PlaceHolderImages.find(p => p.id === 'wood-texture');
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
 
   return (
@@ -28,7 +27,8 @@ export default function HowItWorksSection() {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className="bg-primary border-0 text-center transition-transform duration-300 hover:-translate-y-2"
+              className="bg-card-image border-0 text-center transition-transform duration-300 hover:-translate-y-2"
+              style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
             >
               <CardHeader>
                 <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary-foreground flex items-center justify-center mb-4 bg-background">
@@ -46,7 +46,8 @@ export default function HowItWorksSection() {
           <Button
             size="lg"
             asChild
-            className="text-lg py-7 px-8"
+            className="text-lg py-7 px-8 bg-card-image"
+            style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
           >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               Pedir orçamento agora
