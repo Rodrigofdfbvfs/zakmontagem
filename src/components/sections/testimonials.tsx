@@ -23,7 +23,7 @@ const testimonials = [
 export default function TestimonialsSection() {
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
   return (
-    <TexturedSection imageId="services-background">
+    <TexturedSection>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">O que meus clientes dizem</h2>
         </div>
@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
                     style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
                   >
                     <CardHeader>
-                      <CardTitle className="text-primary-foreground font-bold">{testimonial.name}</CardTitle>
+                      <CardTitle className="text-black font-bold">{testimonial.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
                       <p className="text-primary-foreground/90 font-light italic">{testimonial.text}</p>

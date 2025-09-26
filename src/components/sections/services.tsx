@@ -14,7 +14,7 @@ const services = [
 export default function ServicesSection() {
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
   return (
-    <TexturedSection imageId="services-background">
+    <TexturedSection>
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">
           Montamos todos os tipos de móveis com agilidade e cuidado
@@ -28,7 +28,7 @@ export default function ServicesSection() {
             style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
           >
             <CardHeader>
-              <CardTitle className="text-primary-foreground font-bold font-headline text-2xl">{service.title}</CardTitle>
+              <CardTitle className="text-black font-bold font-headline text-2xl">{service.title}</CardTitle>
               <CardDescription className="text-primary-foreground/90 font-light pt-2">{service.description}</CardDescription>
             </CardHeader>
           </Card>

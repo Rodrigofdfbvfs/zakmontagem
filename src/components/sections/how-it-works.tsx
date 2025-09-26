@@ -18,7 +18,7 @@ export default function HowItWorksSection() {
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
 
   return (
-    <TexturedSection imageId="services-background">
+    <TexturedSection>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Como funciona</h2>
           <p className="mt-4 text-lg text-neutral-300 font-light">Processo simples, rápido e sem dor de cabeça.</p>
@@ -34,7 +34,7 @@ export default function HowItWorksSection() {
                 <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary-foreground flex items-center justify-center mb-4 bg-background">
                   <span className="text-3xl font-bold text-primary">{step.number}</span>
                 </div>
-                <CardTitle className="text-primary-foreground font-bold text-xl">{step.title}</CardTitle>
+                <CardTitle className="text-black font-bold text-xl">{step.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-primary-foreground/90 font-light">{step.description}</p>

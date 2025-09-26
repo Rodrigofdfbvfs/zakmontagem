@@ -34,7 +34,7 @@ export default function FaqSection() {
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
 
   return (
-    <TexturedSection imageId="services-background">
+    <TexturedSection>
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Perguntas Frequentes</h2>
@@ -42,7 +42,7 @@ export default function FaqSection() {
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem value={`item-${index}`} key={index} className="bg-card-image border-0 rounded-lg px-6 text-primary-foreground" style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}>
-              <AccordionTrigger className="text-left text-lg font-bold text-primary-foreground hover:no-underline py-4">
+              <AccordionTrigger className="text-left text-lg font-bold text-black hover:no-underline py-4">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-base font-light text-primary-foreground/90 pb-4">

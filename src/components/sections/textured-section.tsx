@@ -23,7 +23,6 @@ export const TexturedSection: FC<TexturedSectionProps> = ({ children, className,
             className="object-cover"
             data-ai-hint={bgImage.imageHint}
           />
-          <div className="absolute inset-0 bg-black/60" />
         </>
       )}
       <div className="relative container mx-auto px-4 py-20 sm:py-28">
