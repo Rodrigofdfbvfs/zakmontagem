@@ -1,35 +1,20 @@
 'use client';
-import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { TexturedSection } from './textured-section';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
 
 const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
-const ImgurEmbed = ({ id }: { id: string }) => {
-  useEffect(() => {
-    const scriptId = 'imgur-embed-script';
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script');
-      script.id = scriptId;
-      script.src = '//s.imgur.com/min/embed.js';
-      script.async = true;
-      script.charset = 'utf-8';
-      document.body.appendChild(script);
-    }
-  }, []);
-
-  return (
-    <blockquote className="imgur-embed-pub" lang="en" data-id={id}>
-      <a href={`https://imgur.com/${id}`}>View post on imgur.com</a>
-    </blockquote>
-  );
-};
+const images = [
+  { id: 'ozLMR53', src: 'https://i.imgur.com/ozLMR53.jpeg', alt: 'Montagem de móvel 1' },
+  { id: 'GvtSsiw', src: 'https://i.imgur.com/GvtSsiw.jpeg', alt: 'Montagem de móvel 2' },
+  { id: 'egzXfSu', src: 'https://i.imgur.com/egzXfSu.jpeg', alt: 'Montagem de móvel 3' },
+];
 
 export default function SocialProofSection() {
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
-  const images = ['ozLMR53', 'GvtSsiw', 'egzXfSu'];
 
   return (
     <TexturedSection className="bg-black">
@@ -42,9 +27,14 @@ export default function SocialProofSection() {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-        {images.map((id) => (
-          <div key={id} className="w-full h-full min-h-[300px] md:min-h-[500px] overflow-hidden rounded-lg shadow-lg">
-             <ImgurEmbed id={id} />
+        {images.map((image) => (
+          <div key={image.id} className="w-full h-full min-h-[300px] md:min-h-[500px] overflow-hidden rounded-lg shadow-lg relative">
+             <Image 
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover"
+             />
           </div>
         ))}
       </div>
