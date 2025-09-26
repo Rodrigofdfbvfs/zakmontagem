@@ -32,7 +32,7 @@ export default function HeroSection() {
       )}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 
-          className="text-2xl md:text-3xl font-bold tracking-wider drop-shadow-lg"
+          className="text-2xl md:text-3xl font-bold tracking-wider drop-shadow-lg tracking-in-expand"
           style={textFillStyle}
         >
           ZAAK MONTAGENS
