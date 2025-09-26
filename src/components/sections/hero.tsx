@@ -29,7 +29,6 @@ export default function HeroSection() {
           priority
         />
       )}
-      <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 
           className="text-2xl md:text-3xl font-bold tracking-wider drop-shadow-lg"
