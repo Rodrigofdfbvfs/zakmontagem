@@ -43,7 +43,9 @@ export default function SocialProofSection() {
         <Button
           size="lg"
           asChild
-          className="text-lg py-7 px-8 bg-card-image"
+          className={cn(
+            "text-lg py-7 px-8 bg-card-image cta-shine-effect",
+          )}
           style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
         >
           <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">

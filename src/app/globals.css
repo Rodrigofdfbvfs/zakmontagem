@@ -8,7 +8,7 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 10%; /* #1A1A1A */
+    --background: 0 0% 0%; /* #000000 */
     --foreground: 0 0% 98%;
 
     --card: 0 0% 7%; /* #121212 */
@@ -45,7 +45,7 @@ body {
   }
 
   .dark {
-    --background: 0 0% 10%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
     --card: 0 0% 7%;
     --card-foreground: 0 0% 98%;
@@ -122,5 +122,44 @@ body {
     background: hsl(var(--primary));
     box-shadow: 0 10px 30px hsl(var(--primary));
     z-index: 2;
+  }
+
+  .cta-shine-effect {
+    overflow: hidden;
+  }
+
+  .cta-shine-effect::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    background: #ffffff;
+    box-shadow: 0 0 30px 20px #ffffffaa;
+    transform: skewX(-30deg);
+    mix-blend-mode: plus-lighter;
+    z-index: 1;
+  }
+
+  .cta-shine-effect:hover::before {
+    animation: brilho 0.8s linear;
+  }
+}
+
+@keyframes brilho {
+  0% {
+    opacity: 0;
+    left: -100%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    left: 100%;
   }
 }

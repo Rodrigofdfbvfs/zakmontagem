@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { cn } from '@/lib/utils';
 
 const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
@@ -46,7 +47,9 @@ export default function HeroSection() {
           <Button
             size="lg"
             asChild
-            className="text-lg py-7 px-8 bg-card-image"
+            className={cn(
+              "text-lg py-7 px-8 bg-card-image cta-shine-effect",
+            )}
             style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
           >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
