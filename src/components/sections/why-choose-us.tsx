@@ -1,6 +1,7 @@
 import { Award, Clock, ShieldCheck, Sparkles } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { TexturedSection } from "./textured-section";
+import { cn } from "@/lib/utils";
 
 const benefits = [
   {
@@ -37,7 +38,10 @@ export default function WhyChooseUsSection() {
         {benefits.map((benefit) => (
           <div
             key={benefit.title}
-            className="bg-card-image border-0 rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-yellow-300/20 transition-all duration-300 transform hover:-translate-y-1"
+            className={cn(
+              "bg-card-image border-0 rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-yellow-300/20 transition-all duration-300 transform hover:-translate-y-1 relative",
+              "detalhe"
+            )}
             style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
           >
             {benefit.icon}

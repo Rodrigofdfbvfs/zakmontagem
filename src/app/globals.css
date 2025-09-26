@@ -110,4 +110,17 @@ body {
   .social-proof-card:hover ~ .social-proof-card {
     @apply left-[50px];
   }
+  
+  .detalhe::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 80px;
+    height: 7px;
+    border-radius:10px;
+    background: hsl(var(--primary));
+    box-shadow: 0 10px 30px hsl(var(--primary));
+    z-index: 2;
+  }
 }

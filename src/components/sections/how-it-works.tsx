@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { TexturedSection } from "./textured-section";
+import { cn } from '@/lib/utils';
 
 const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
@@ -27,7 +28,10 @@ export default function HowItWorksSection() {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className="bg-card-image border-0 text-center transition-transform duration-300 hover:-translate-y-2"
+              className={cn(
+                "bg-card-image border-0 text-center transition-transform duration-300 hover:-translate-y-2 relative",
+                "detalhe"
+              )}
               style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
             >
               <CardHeader>

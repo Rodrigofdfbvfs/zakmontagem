@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { TexturedSection } from "./textured-section";
+import { cn } from "@/lib/utils";
 
 const services = [
   { title: "Guarda-roupas", description: "Montagem e desmontagem de todos os modelos e marcas." },
@@ -24,7 +25,10 @@ export default function ServicesSection() {
         {services.map((service) => (
           <Card
             key={service.title}
-            className="bg-card-image border-0 rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1"
+            className={cn(
+              "bg-card-image border-0 rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1 relative",
+              "detalhe"
+            )}
             style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
           >
             <CardHeader>
