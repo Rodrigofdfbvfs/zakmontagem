@@ -6,7 +6,6 @@ import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import TestimonialsSection from '@/components/sections/testimonials';
 import FaqSection from '@/components/sections/faq';
 import SocialProofSection from '@/components/sections/social-proof';
-import { Separator } from '@/components/ui/separator';
 
 export default function Home() {
   return (
@@ -14,15 +13,10 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <ServicesSection />
-        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <HowItWorksSection />
-        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <WhyChooseUsSection />
-        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <SocialProofSection />
-        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <TestimonialsSection />
-        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <FaqSection />
       </main>
       <Footer />
