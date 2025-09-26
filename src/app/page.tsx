@@ -4,7 +4,6 @@ import ServicesSection from '@/components/sections/services';
 import HowItWorksSection from '@/components/sections/how-it-works';
 import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import TestimonialsSection from '@/components/sections/testimonials';
-import GallerySection from '@/components/sections/gallery';
 import FaqSection from '@/components/sections/faq';
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
         <HowItWorksSection />
         <WhyChooseUsSection />
         <TestimonialsSection />
-        <GallerySection />
         <FaqSection />
       </main>
       <Footer />

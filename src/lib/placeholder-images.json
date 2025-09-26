@@ -19,42 +19,6 @@
       "imageHint": "tools background"
     },
     {
-      "id": "gallery-1",
-      "description": "Assembled wardrobe in a bedroom.",
-      "imageUrl": "https://images.unsplash.com/photo-1563310791-ae647a16498b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2FyZHJvYmUlMjBiZWRyb29tfGVufDB8fHx8MTc1ODY1MzExMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wardrobe bedroom"
-    },
-    {
-      "id": "gallery-2",
-      "description": "Assembled home office desk and chair.",
-      "imageUrl": "https://images.unsplash.com/photo-1664575198308-3959904fa430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxob21lJTIwb2ZmaWNlfGVufDB8fHx8MTc1ODYxODA3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "home office"
-    },
-    {
-      "id": "gallery-3",
-      "description": "Assembled kitchen cabinets.",
-      "imageUrl": "https://images.unsplash.com/photo-1601760561441-16420502c7e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxraXRjaGVuJTIwY2FiaW5ldHN8ZW58MHx8fHwxNzU4NjUzMTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "kitchen cabinets"
-    },
-    {
-      "id": "gallery-4",
-      "description": "Assembled bookshelf in a living room.",
-      "imageUrl": "https://images.unsplash.com/photo-1589226095228-08b8a352efd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxib29rc2hlbGYlMjBsaXZpbmdyb29tfGVufDB8fHx8MTc1ODY1MzEwOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bookshelf livingroom"
-    },
-    {
-      "id": "gallery-5",
-      "description": "Assembled bed frame.",
-      "imageUrl": "https://images.unsplash.com/photo-1672350562148-8bf371963340?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWQlMjBiZWRyb29tfGVufDB8fHx8MTc1ODY1MzExMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bed bedroom"
-    },
-    {
-      "id": "gallery-6",
-      "description": "Assembled TV stand.",
-      "imageUrl": "https://images.unsplash.com/photo-1696513338863-e3cf828d237d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0diUyMHN0YW5kfGVufDB8fHx8MTc1ODY1MzEwOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tv stand"
-    },
-    {
       "id": "faq-background",
       "description": "Tons de madeira claro com um padrão de veios finos.",
       "imageUrl": "https://i.imgur.com/8KmrVyU.png",
