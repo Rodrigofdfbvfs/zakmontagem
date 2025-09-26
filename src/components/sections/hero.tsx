@@ -11,6 +11,17 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-screen min-h-[700px] w-full flex items-center justify-center text-white overflow-hidden bg-background">
+      {heroBg && (
+        <Image
+          src={heroBg.imageUrl}
+          alt={heroBg.description}
+          fill
+          className="object-cover"
+          data-ai-hint={heroBg.imageHint}
+          priority
+        />
+      )}
+      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-primary tracking-wider drop-shadow-lg">
           ZAAK MONTAGENS

@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Sala de estar elegante com sofá e decoração moderna.",
-      "imageUrl": "https://i.imgur.com/iSITWEy.png",
-      "imageHint": "living room"
+      "description": "Homem montando um móvel de madeira.",
+      "imageUrl": "https://i.imgur.com/je9xPAn.png",
+      "imageHint": "furniture assembly"
     },
     {
       "id": "wood-texture",
