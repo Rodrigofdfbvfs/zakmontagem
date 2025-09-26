@@ -5,6 +5,7 @@ import HowItWorksSection from '@/components/sections/how-it-works';
 import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import TestimonialsSection from '@/components/sections/testimonials';
 import FaqSection from '@/components/sections/faq';
+import SocialProofSection from '@/components/sections/social-proof';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <ServicesSection />
         <HowItWorksSection />
         <WhyChooseUsSection />
+        <SocialProofSection />
         <TestimonialsSection />
         <FaqSection />
       </main>
