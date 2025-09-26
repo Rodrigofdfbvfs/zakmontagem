@@ -33,7 +33,7 @@ export default function WhyChooseUsSection() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {benefits.map((benefit) => (
-          <div key={benefit.title} className="bg-card border border-primary rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-primary/20 transition-all duration-300">
+          <div key={benefit.title} className="bg-card/80 border border-primary rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1">
             {benefit.icon}
             <h3 className="text-primary font-bold text-xl mt-4">{benefit.title}</h3>
             <p className="text-neutral-200 font-light mt-2 flex-grow">{benefit.description}</p>

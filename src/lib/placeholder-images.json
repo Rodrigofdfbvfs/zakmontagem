@@ -13,6 +13,12 @@
       "imageHint": "light wood"
     },
     {
+      "id": "services-background",
+      "description": "Homem montando um móvel.",
+      "imageUrl": "https://i.imgur.com/vkQ6mcW.png",
+      "imageHint": "furniture assembly"
+    },
+    {
       "id": "gallery-1",
       "description": "Assembled wardrobe in a bedroom.",
       "imageUrl": "https://images.unsplash.com/photo-1563310791-ae647a16498b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2FyZHJvYmUlMjBiZWRyb29tfGVufDB8fHx8MTc1ODY1MzExMHww&ixlib=rb-4.1.0&q=80&w=1080",
