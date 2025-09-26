@@ -7,16 +7,26 @@ import TestimonialsSection from '@/components/sections/testimonials';
 import FaqSection from '@/components/sections/faq';
 import SocialProofSection from '@/components/sections/social-proof';
 
+const SectionDivider = () => (
+  <hr className="w-full border-t border-border/20" />
+);
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <main className="flex-grow">
         <HeroSection />
+        <SectionDivider />
         <ServicesSection />
+        <SectionDivider />
         <HowItWorksSection />
+        <SectionDivider />
         <WhyChooseUsSection />
+        <SectionDivider />
         <SocialProofSection />
+        <SectionDivider />
         <TestimonialsSection />
+        <SectionDivider />
         <FaqSection />
       </main>
       <Footer />
