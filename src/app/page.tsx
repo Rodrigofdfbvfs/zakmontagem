@@ -14,15 +14,15 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <ServicesSection />
-        <Separator className="my-4 md:my-8 bg-border/20" />
+        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <HowItWorksSection />
-        <Separator className="my-4 md:my-8 bg-border/20" />
+        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <WhyChooseUsSection />
-        <Separator className="my-4 md:my-8 bg-border/20" />
+        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <SocialProofSection />
-        <Separator className="my-4 md:my-8 bg-border/20" />
+        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <TestimonialsSection />
-        <Separator className="my-4 md:my-8 bg-border/20" />
+        <Separator className="my-4 md:my-8 bg-border opacity-20" />
         <FaqSection />
       </main>
       <Footer />
