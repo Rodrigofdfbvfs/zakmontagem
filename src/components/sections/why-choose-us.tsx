@@ -1,5 +1,4 @@
 import { Award, Clock, ShieldCheck, Sparkles } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TexturedSection } from "./textured-section";
 
 const benefits = [
@@ -27,14 +26,14 @@ const benefits = [
 
 export default function WhyChooseUsSection() {
   return (
-    <TexturedSection overlayOpacity="bg-black/90">
+    <TexturedSection>
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Por que escolher meu serviço?</h2>
         <p className="mt-4 text-lg text-neutral-300 font-light">Compromisso com qualidade, segurança e praticidade em cada montagem.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {benefits.map((benefit) => (
-          <div key={benefit.title} className="bg-black/50 border border-primary rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-primary/20 transition-all duration-300">
+          <div key={benefit.title} className="bg-card border border-primary rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-primary/20 transition-all duration-300">
             {benefit.icon}
             <h3 className="text-primary font-bold text-xl mt-4">{benefit.title}</h3>
             <p className="text-neutral-200 font-light mt-2 flex-grow">{benefit.description}</p>

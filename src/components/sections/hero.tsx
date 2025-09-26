@@ -1,19 +1,12 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
 export default function HeroSection() {
-  const heroBg = PlaceHolderImages.find(p => p.id === 'hero-background');
-
   return (
-    <section className="relative h-screen min-h-[700px] w-full flex items-center justify-center text-white overflow-hidden hero-bg-effect">
-      {heroBg && (
-         <div className="hero-bg-image" style={{ backgroundImage: `url(${heroBg.imageUrl})` }}></div>
-      )}
-      
+    <section className="relative h-screen min-h-[700px] w-full flex items-center justify-center text-white overflow-hidden bg-background">
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-primary tracking-wider drop-shadow-lg">
           ZAAK MONTAGENS

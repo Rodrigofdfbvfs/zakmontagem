@@ -13,7 +13,7 @@ const galleryItems = [
 
 export default function GallerySection() {
   return (
-    <TexturedSection overlayOpacity="bg-black/90">
+    <TexturedSection>
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Resultados que falam por si</h2>
       </div>
@@ -22,7 +22,7 @@ export default function GallerySection() {
           const image = PlaceHolderImages.find(p => p.id === item.imageId);
           if (!image) return null;
           return (
-            <div key={item.name} className="bg-black/50 border border-primary rounded-lg overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-2">
+            <div key={item.name} className="bg-card border border-primary rounded-lg overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-2">
               <div className="relative w-full aspect-[4/3]">
                 <Image
                   src={image.imageUrl}

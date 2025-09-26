@@ -12,7 +12,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <TexturedSection overlayOpacity="bg-black/90">
+    <TexturedSection>
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">
           Montamos todos os tipos de móveis com agilidade e cuidado
@@ -20,7 +20,7 @@ export default function ServicesSection() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
-          <Card key={service.title} className="bg-black/50 border-primary border rounded-lg shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+          <Card key={service.title} className="bg-card border-primary border rounded-lg shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
             <CardHeader>
               <CardTitle className="text-primary font-bold font-headline text-2xl">{service.title}</CardTitle>
               <CardDescription className="text-neutral-200 font-light pt-2">{service.description}</CardDescription>
