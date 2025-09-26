@@ -9,6 +9,14 @@ export default function HeroSection() {
   const heroBg = PlaceHolderImages.find(p => p.id === 'hero-background');
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
 
+  const textFillStyle = {
+    backgroundImage: "url('https://i.imgur.com/Vq0KW6E.png')",
+    backgroundSize: 'cover',
+    backgroundClip: 'text',
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',
+  };
+
   return (
     <section className="relative h-screen min-h-[700px] w-full flex items-center justify-center text-white overflow-hidden bg-background">
       {heroBg && (
@@ -21,13 +29,15 @@ export default function HeroSection() {
           priority
         />
       )}
-      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-primary tracking-wider drop-shadow-lg">
+        <h2 
+          className="text-2xl md:text-3xl font-bold tracking-wider drop-shadow-lg"
+          style={textFillStyle}
+        >
           ZAAK MONTAGENS
         </h2>
         <h1 className="mt-2 text-4xl md:text-6xl font-bold font-headline leading-tight drop-shadow-lg">
-          Seu móvel montado com <span className="text-primary">agilidade e experiência</span> em Salvador, Bahia.
+          Seu móvel montado com <span style={textFillStyle}>agilidade e experiência</span> em Salvador, Bahia.
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl font-light text-neutral-200 drop-shadow-md">
           Com anos de experiência e atenção aos mínimos detalhes, ofereço montagem e desmontagem de móveis com a união perfeita de cuidado e rapidez. Atendo residências e empresas, realizando ajustes em todos os tipos e marcas de móveis — do guarda-roupa ao painel de TV — para que você tenha tranquilidade, confiança e um resultado impecável, sem dor de cabeça.
