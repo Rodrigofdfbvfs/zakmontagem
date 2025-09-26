@@ -26,10 +26,8 @@ const benefits = [
 ];
 
 export default function WhyChooseUsSection() {
-  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
-
   return (
-    <TexturedSection imageId="services-background">
+    <TexturedSection>
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Por que escolher meu serviço?</h2>
         <p className="mt-4 text-lg text-neutral-300 font-light">Compromisso com qualidade, segurança e praticidade em cada montagem.</p>
@@ -38,8 +36,7 @@ export default function WhyChooseUsSection() {
         {benefits.map((benefit) => (
           <div
             key={benefit.title}
-            className="bg-card-image border-0 rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-yellow-300/20 transition-all duration-300 transform hover:-translate-y-1"
-            style={{ '--card-bg-image': cardBg ? `url(${cardBg.imageUrl})` : 'none' } as React.CSSProperties}
+            className="bg-primary border-0 rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-yellow-300/20 transition-all duration-300 transform hover:-translate-y-1"
           >
             {benefit.icon}
             <h3 className="text-primary-foreground font-bold text-xl mt-4">{benefit.title}</h3>

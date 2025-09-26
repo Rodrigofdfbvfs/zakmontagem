@@ -19,7 +19,7 @@ export default function HowItWorksSection() {
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
 
   return (
-    <TexturedSection imageId="wood-texture">
+    <TexturedSection>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Como funciona</h2>
           <p className="mt-4 text-lg text-neutral-300 font-light">Processo simples, rápido e sem dor de cabeça.</p>
@@ -28,8 +28,7 @@ export default function HowItWorksSection() {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className="bg-card-image border-0 text-center transition-transform duration-300 hover:-translate-y-2"
-              style={{ '--card-bg-image': cardBg ? `url(${cardBg.imageUrl})` : 'none' } as React.CSSProperties}
+              className="bg-primary border-0 text-center transition-transform duration-300 hover:-translate-y-2"
             >
               <CardHeader>
                 <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary-foreground flex items-center justify-center mb-4 bg-background">
@@ -47,8 +46,7 @@ export default function HowItWorksSection() {
           <Button
             size="lg"
             asChild
-            className="text-lg py-7 px-8 bg-card-image"
-            style={{ '--card-bg-image': cardBg ? `url(${cardBg.imageUrl})` : 'none' } as React.CSSProperties}
+            className="text-lg py-7 px-8"
           >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               Pedir orçamento agora
