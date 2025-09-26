@@ -27,9 +27,9 @@ export default function SocialProofSection() {
           Confira alguns registros reais de trabalhos realizados, que comprovam a qualidade, a agilidade e o cuidado em cada montagem.
         </p>
       </div>
-      <div className="flex justify-center items-center social-proof-wrapper py-8">
+      <div className="flex justify-center items-center gap-4 py-8">
         {images.map((image) => (
-          <div key={image.id} className="social-proof-card overflow-hidden duration-400">
+          <div key={image.id} className="relative h-[280px] w-[200px] overflow-hidden rounded-lg shadow-lg">
              <Image 
                 src={image.src}
                 alt={image.alt}
