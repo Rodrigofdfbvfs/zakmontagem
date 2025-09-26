@@ -13,7 +13,7 @@ const galleryItems = [
 
 export default function GallerySection() {
   return (
-    <TexturedSection>
+    <TexturedSection imageId="services-background">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Resultados que falam por si</h2>
       </div>
