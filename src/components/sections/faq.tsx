@@ -31,7 +31,7 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <TexturedSection useImage>
+    <TexturedSection imageId="faq-background">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Perguntas Frequentes</h2>
