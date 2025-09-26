@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { TexturedSection } from './textured-section';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
@@ -13,34 +14,48 @@ const steps = [
 ];
 
 export default function HowItWorksSection() {
+  const sectionBg = PlaceHolderImages.find(p => p.id === 'wood-texture');
+
   return (
-    <TexturedSection>
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Como funciona</h2>
-        <p className="mt-4 text-lg text-neutral-300 font-light">Processo simples, rápido e sem dor de cabeça.</p>
+    <section className="relative bg-background">
+      {sectionBg && (
+        <Image
+          src={sectionBg.imageUrl}
+          alt={sectionBg.description}
+          fill
+          className="object-cover"
+          data-ai-hint={sectionBg.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-black/60" />
+      <div className="relative container mx-auto px-4 py-20 sm:py-28">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Como funciona</h2>
+          <p className="mt-4 text-lg text-neutral-300 font-light">Processo simples, rápido e sem dor de cabeça.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {steps.map((step) => (
+            <Card key={step.number} className="bg-background border-primary text-center transition-transform duration-300 hover:-translate-y-2">
+              <CardHeader>
+                <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center mb-4">
+                  <span className="text-3xl font-bold text-primary">{step.number}</span>
+                </div>
+                <CardTitle className="text-white font-bold text-xl">{step.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-neutral-300 font-light">{step.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <div className="text-center">
+          <Button size="lg" asChild className="text-lg py-7 px-8">
+            <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+              Pedir orçamento agora
+            </Link>
+          </Button>
+        </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-        {steps.map((step) => (
-          <Card key={step.number} className="bg-background border-primary text-center transition-transform duration-300 hover:-translate-y-2">
-            <CardHeader>
-              <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center mb-4">
-                <span className="text-3xl font-bold text-primary">{step.number}</span>
-              </div>
-              <CardTitle className="text-white font-bold text-xl">{step.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-neutral-300 font-light">{step.description}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-      <div className="text-center">
-        <Button size="lg" asChild className="text-lg py-7 px-8">
-          <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-            Pedir orçamento agora
-          </Link>
-        </Button>
-      </div>
-    </TexturedSection>
+    </section>
   );
 }
