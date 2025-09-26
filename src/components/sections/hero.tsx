@@ -21,7 +21,6 @@ export default function HeroSection() {
           priority
         />
       )}
-      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-primary tracking-wider drop-shadow-lg">
           ZAAK MONTAGENS
