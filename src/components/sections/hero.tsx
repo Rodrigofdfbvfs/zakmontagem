@@ -7,6 +7,7 @@ const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um or�
 
 export default function HeroSection() {
   const heroBg = PlaceHolderImages.find(p => p.id === 'hero-background');
+  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
 
   return (
     <section className="relative h-screen min-h-[700px] w-full flex items-center justify-center text-white overflow-hidden bg-background">
@@ -32,7 +33,12 @@ export default function HeroSection() {
           Com anos de experiência e atenção aos mínimos detalhes, ofereço montagem e desmontagem de móveis com a união perfeita de cuidado e rapidez. Atendo residências e empresas, realizando ajustes em todos os tipos e marcas de móveis — do guarda-roupa ao painel de TV — para que você tenha tranquilidade, confiança e um resultado impecável, sem dor de cabeça.
         </p>
         <div className="mt-8">
-          <Button size="lg" asChild className="text-lg py-7 px-8">
+          <Button
+            size="lg"
+            asChild
+            className="text-lg py-7 px-8 bg-card-image"
+            style={{ '--card-bg-image': cardBg ? `url(${cardBg.imageUrl})` : 'none' } as React.CSSProperties}
+          >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               Solicite seu Orçamento Agora
             </Link>

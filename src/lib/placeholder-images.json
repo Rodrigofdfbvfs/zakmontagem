@@ -59,6 +59,12 @@
       "description": "Tons de madeira claro com um padrão de veios finos.",
       "imageUrl": "https://i.imgur.com/8KmrVyU.png",
       "imageHint": "light wood"
+    },
+    {
+      "id": "card-background",
+      "description": "Fundo dourado para cards e botões.",
+      "imageUrl": "https://i.imgur.com/y7ralfR.png",
+      "imageHint": "gold background"
     }
   ]
 }

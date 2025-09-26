@@ -77,4 +77,19 @@ body {
 }
 
 @layer utilities {
+  .bg-card-image {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .bg-card-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: var(--card-bg-image);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+  }
 }

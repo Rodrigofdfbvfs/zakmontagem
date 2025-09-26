@@ -22,6 +22,8 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   const sectionBg = PlaceHolderImages.find(p => p.id === 'wood-texture');
+  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
+
   return (
     <TexturedSection imageId="iSITWEy">
         <div className="text-center mb-12">
@@ -44,7 +46,10 @@ export default function TestimonialsSection() {
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-2 h-full">
-                  <Card className="bg-primary border-0 h-full flex flex-col justify-center">
+                  <Card
+                    className="bg-card-image border-0 h-full flex flex-col justify-center"
+                    style={{ '--card-bg-image': cardBg ? `url(${cardBg.imageUrl})` : 'none' } as React.CSSProperties}
+                  >
                     <CardHeader>
                       <CardTitle className="text-primary-foreground font-bold">{testimonial.name}</CardTitle>
                     </CardHeader>

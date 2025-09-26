@@ -12,6 +12,8 @@ const galleryItems = [
 ];
 
 export default function GallerySection() {
+  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
+
   return (
     <TexturedSection imageId="services-background">
       <div className="text-center mb-12">
@@ -33,7 +35,10 @@ export default function GallerySection() {
                   data-ai-hint={item.hint}
                 />
               </div>
-              <div className="p-6 bg-primary text-primary-foreground">
+              <div
+                className="p-6 bg-card-image"
+                style={{ '--card-bg-image': cardBg ? `url(${cardBg.imageUrl})` : 'none' } as React.CSSProperties}
+              >
                 <h3 className="text-xl font-bold text-primary-foreground">{item.name}</h3>
                 <p className="text-primary-foreground/90 font-light mt-1">{item.description}</p>
               </div>

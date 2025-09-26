@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { TexturedSection } from "./textured-section";
 
 const services = [
@@ -11,6 +12,8 @@ const services = [
 ];
 
 export default function ServicesSection() {
+  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
+
   return (
     <TexturedSection imageId="services-background">
       <div className="text-center mb-12">
@@ -20,7 +23,11 @@ export default function ServicesSection() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
-          <Card key={service.title} className="bg-primary border-0 rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1">
+          <Card
+            key={service.title}
+            className="bg-card-image border-0 rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1"
+            style={{ '--card-bg-image': cardBg ? `url(${cardBg.imageUrl})` : 'none' } as React.CSSProperties}
+          >
             <CardHeader>
               <CardTitle className="text-primary-foreground font-bold font-headline text-2xl">{service.title}</CardTitle>
               <CardDescription className="text-primary-foreground/90 font-light pt-2">{service.description}</CardDescription>

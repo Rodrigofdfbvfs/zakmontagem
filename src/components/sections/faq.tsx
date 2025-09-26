@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { TexturedSection } from "./textured-section";
 
 const faqs = [
@@ -30,6 +31,8 @@ const faqs = [
 ];
 
 export default function FaqSection() {
+  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
+
   return (
     <TexturedSection imageId="faq-background">
       <div className="container mx-auto px-4 max-w-4xl">

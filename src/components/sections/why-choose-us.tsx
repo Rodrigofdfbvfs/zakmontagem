@@ -1,4 +1,5 @@
 import { Award, Clock, ShieldCheck, Sparkles } from "lucide-react";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { TexturedSection } from "./textured-section";
 
 const benefits = [
@@ -25,6 +26,8 @@ const benefits = [
 ];
 
 export default function WhyChooseUsSection() {
+  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
+
   return (
     <TexturedSection imageId="services-background">
       <div className="text-center mb-12">
@@ -33,7 +36,11 @@ export default function WhyChooseUsSection() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {benefits.map((benefit) => (
-          <div key={benefit.title} className="bg-primary border-0 rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-yellow-300/20 transition-all duration-300 transform hover:-translate-y-1">
+          <div
+            key={benefit.title}
+            className="bg-card-image border-0 rounded-lg text-center p-6 flex flex-col items-center shadow-lg hover:shadow-yellow-300/20 transition-all duration-300 transform hover:-translate-y-1"
+            style={{ '--card-bg-image': cardBg ? `url(${cardBg.imageUrl})` : 'none' } as React.CSSProperties}
+          >
             {benefit.icon}
             <h3 className="text-primary-foreground font-bold text-xl mt-4">{benefit.title}</h3>
             <p className="text-primary-foreground/90 font-light mt-2 flex-grow">{benefit.description}</p>
