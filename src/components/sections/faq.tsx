@@ -38,11 +38,11 @@ export default function FaqSection() {
         </div>
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem value={`item-${index}`} key={index} className="bg-card border border-primary/50 rounded-lg px-6">
-              <AccordionTrigger className="text-left text-lg font-bold text-primary hover:no-underline py-4">
+            <AccordionItem value={`item-${index}`} key={index} className="bg-primary border-0 rounded-lg px-6 text-primary-foreground">
+              <AccordionTrigger className="text-left text-lg font-bold text-primary-foreground hover:no-underline py-4">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-base font-light text-neutral-200 pb-4">
+              <AccordionContent className="text-base font-light text-primary-foreground/90 pb-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

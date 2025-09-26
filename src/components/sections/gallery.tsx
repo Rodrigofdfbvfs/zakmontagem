@@ -33,9 +33,9 @@ export default function GallerySection() {
                   data-ai-hint={item.hint}
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-primary">{item.name}</h3>
-                <p className="text-neutral-200 font-light mt-1">{item.description}</p>
+              <div className="p-6 bg-primary text-primary-foreground">
+                <h3 className="text-xl font-bold text-primary-foreground">{item.name}</h3>
+                <p className="text-primary-foreground/90 font-light mt-1">{item.description}</p>
               </div>
             </div>
           );

@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { TexturedSection } from "./textured-section";
 
 const testimonials = [
   { name: "Ana P.", text: "“Serviço rápido e caprichado. Meu guarda-roupa ficou perfeito, sem falhas.”" },
@@ -22,18 +23,7 @@ const testimonials = [
 export default function TestimonialsSection() {
   const sectionBg = PlaceHolderImages.find(p => p.id === 'wood-texture');
   return (
-    <section className="relative bg-background">
-      {sectionBg && (
-        <Image
-          src={sectionBg.imageUrl}
-          alt={sectionBg.description}
-          fill
-          className="object-cover"
-          data-ai-hint={sectionBg.imageHint}
-        />
-      )}
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="relative container mx-auto px-4 py-20 sm:py-28">
+    <TexturedSection imageId="iSITWEy">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">O que meus clientes dizem</h2>
         </div>
@@ -54,12 +44,12 @@ export default function TestimonialsSection() {
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-2 h-full">
-                  <Card className="bg-background border-primary h-full flex flex-col justify-center">
+                  <Card className="bg-primary border-0 h-full flex flex-col justify-center">
                     <CardHeader>
-                      <CardTitle className="text-primary font-bold">{testimonial.name}</CardTitle>
+                      <CardTitle className="text-primary-foreground font-bold">{testimonial.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <p className="text-neutral-200 font-light italic">{testimonial.text}</p>
+                      <p className="text-primary-foreground/90 font-light italic">{testimonial.text}</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -69,7 +59,6 @@ export default function TestimonialsSection() {
           <CarouselPrevious className="text-primary border-primary hover:bg-primary hover:text-primary-foreground disabled:border-muted disabled:text-muted" />
           <CarouselNext className="text-primary border-primary hover:bg-primary hover:text-primary-foreground disabled:border-muted disabled:text-muted" />
         </Carousel>
-      </div>
-    </section>
+    </TexturedSection>
   );
 }

@@ -20,10 +20,10 @@ export default function ServicesSection() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
-          <Card key={service.title} className="bg-card/80 border-primary border rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1">
+          <Card key={service.title} className="bg-primary border-0 rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1">
             <CardHeader>
-              <CardTitle className="text-primary font-bold font-headline text-2xl">{service.title}</CardTitle>
-              <CardDescription className="text-neutral-200 font-light pt-2">{service.description}</CardDescription>
+              <CardTitle className="text-primary-foreground font-bold font-headline text-2xl">{service.title}</CardTitle>
+              <CardDescription className="text-primary-foreground/90 font-light pt-2">{service.description}</CardDescription>
             </CardHeader>
           </Card>
         ))}
