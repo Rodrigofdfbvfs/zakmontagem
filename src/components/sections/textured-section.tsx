@@ -10,8 +10,22 @@ interface TexturedSectionProps {
 }
 
 export const TexturedSection: FC<TexturedSectionProps> = ({ children, className, imageId }) => {
+  const bgImage = imageId ? PlaceHolderImages.find(p => p.id === imageId) : undefined;
+
   return (
     <div className={cn('relative bg-background', className)}>
+      {bgImage && (
+        <>
+          <Image
+            src={bgImage.imageUrl}
+            alt={bgImage.description}
+            fill
+            className="object-cover"
+            data-ai-hint={bgImage.imageHint}
+          />
+          <div className="absolute inset-0 bg-black/60" />
+        </>
+      )}
       <div className="relative container mx-auto px-4 py-20 sm:py-28">
         {children}
       </div>
