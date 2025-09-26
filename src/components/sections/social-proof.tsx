@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { TexturedSection } from './textured-section';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
@@ -26,9 +27,9 @@ export default function SocialProofSection() {
           Confira alguns registros reais de trabalhos realizados, que comprovam a qualidade, a agilidade e o cuidado em cada montagem.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+      <div className="flex justify-center items-center social-proof-wrapper py-8">
         {images.map((image) => (
-          <div key={image.id} className="w-full h-full min-h-[300px] md:min-h-[500px] overflow-hidden rounded-lg shadow-lg relative">
+          <div key={image.id} className="social-proof-card overflow-hidden duration-400">
              <Image 
                 src={image.src}
                 alt={image.alt}
