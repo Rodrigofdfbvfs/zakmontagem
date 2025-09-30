@@ -16,7 +16,7 @@ export default function Footer() {
         />
       )}
       <div className="absolute inset-0 bg-black/80" />
-      <div className="relative z-10 container mx-auto px-4 text-center text-sm text-muted-foreground">
+      <div className="relative z-10 container mx-auto px-4 text-center text-sm text-white">
         © 2025 Zaak montagens – Todos os direitos reservados.
       </div>
     </footer>
