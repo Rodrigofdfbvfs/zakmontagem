@@ -14,7 +14,7 @@ export default function ServicesSection() {
     <section className="bg-black py-20 sm:py-28 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-fill-image">
             Montamos todos os tipos de móveis com agilidade e cuidado
           </h2>
         </div>
