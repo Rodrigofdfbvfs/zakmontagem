@@ -4,9 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { TexturedSection } from "./textured-section";
-import Image from "next/image";
 
 const faqs = [
   {
@@ -32,10 +29,8 @@ const faqs = [
 ];
 
 export default function FaqSection() {
-  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
-
   return (
-    <TexturedSection className="bg-black">
+    <section className="bg-black py-20 sm:py-28">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Perguntas Frequentes</h2>
@@ -43,29 +38,18 @@ export default function FaqSection() {
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem value={`item-${index}`} key={index} className="border-none">
-              <div className="bg-card border rounded-lg px-6 relative overflow-hidden">
-                {cardBg && (
-                  <Image
-                    src={cardBg.imageUrl}
-                    alt={cardBg.description}
-                    fill
-                    className="object-cover z-0"
-                    data-ai-hint={cardBg.imageHint}
-                  />
-                )}
-                <div className="relative z-20">
-                  <AccordionTrigger className="text-left text-lg font-bold text-black hover:no-underline py-4">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-base font-light text-black/90 pb-4">
-                    {faq.answer}
-                  </AccordionContent>
-                </div>
+              <div className="bg-card/80 border border-neutral-800 rounded-lg px-6">
+                <AccordionTrigger className="text-left text-lg font-bold text-white hover:no-underline py-4">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-base font-light text-neutral-300 pb-4">
+                  {faq.answer}
+                </AccordionContent>
               </div>
             </AccordionItem>
           ))}
         </Accordion>
       </div>
-    </TexturedSection>
+    </section>
   );
 }
