@@ -21,7 +21,10 @@ export const TexturedSection: FC<TexturedSectionProps> = ({ children, className,
           src={image.imageUrl}
           alt={image.description}
           fill
-          className="object-cover z-0 opacity-20"
+          className={cn(
+            "object-cover z-0",
+            !showOverlay && "opacity-20"
+          )}
           data-ai-hint={image.imageHint}
         />
       )}
@@ -32,3 +35,5 @@ export const TexturedSection: FC<TexturedSectionProps> = ({ children, className,
     </div>
   );
 };
+
+    
