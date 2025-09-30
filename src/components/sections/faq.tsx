@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion"
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { TexturedSection } from "./textured-section";
+import Image from "next/image";
 
 const faqs = [
   {
@@ -41,13 +42,27 @@ export default function FaqSection() {
         </div>
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem value={`item-${index}`} key={index} className="bg-card border rounded-lg px-6">
-              <AccordionTrigger className="text-left text-lg font-bold text-card-foreground hover:no-underline py-4">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-base font-light text-card-foreground/90 pb-4">
-                {faq.answer}
-              </AccordionContent>
+            <AccordionItem value={`item-${index}`} key={index} className="border-none">
+              <div className="bg-card border rounded-lg px-6 relative overflow-hidden">
+                {cardBg && (
+                  <Image
+                    src={cardBg.imageUrl}
+                    alt={cardBg.description}
+                    fill
+                    className="object-cover z-0"
+                    data-ai-hint={cardBg.imageHint}
+                  />
+                )}
+                <div className="absolute inset-0 bg-black/60 z-10" />
+                <div className="relative z-20">
+                  <AccordionTrigger className="text-left text-lg font-bold text-card-foreground hover:no-underline py-4">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base font-light text-card-foreground/90 pb-4">
+                    {faq.answer}
+                  </AccordionContent>
+                </div>
+              </div>
             </AccordionItem>
           ))}
         </Accordion>

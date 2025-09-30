@@ -32,9 +32,9 @@
     },
     {
       "id": "card-background",
-      "description": "Fundo dourado para cards e botões.",
-      "imageUrl": "https://i.imgur.com/y7ralfR.png",
-      "imageHint": "gold background"
+      "description": "Fundo texturizado escuro para cards.",
+      "imageUrl": "https://i.imgur.com/Mh0zntg.png",
+      "imageHint": "dark texture"
     }
   ]
 }

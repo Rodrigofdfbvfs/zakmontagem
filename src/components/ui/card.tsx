@@ -1,20 +1,36 @@
 import * as React from "react"
-
+import Image from "next/image"
+import { PlaceHolderImages } from "@/lib/placeholder-images"
 import { cn } from "@/lib/utils"
 
 const Card = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn(
-      "rounded-lg border bg-card text-card-foreground shadow-sm",
-      className
-    )}
-    {...props}
-  />
-))
+>(({ className, children, ...props }, ref) => {
+  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
+  return (
+    <div
+      ref={ref}
+      className={cn(
+        "rounded-lg border bg-card text-card-foreground shadow-sm relative overflow-hidden",
+        className
+      )}
+      {...props}
+    >
+      {cardBg && (
+        <Image
+          src={cardBg.imageUrl}
+          alt={cardBg.description}
+          fill
+          className="object-cover z-0"
+          data-ai-hint={cardBg.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-black/60 z-10" />
+      <div className="relative z-20 h-full">{children}</div>
+    </div>
+  )
+})
 Card.displayName = "Card"
 
 const CardHeader = React.forwardRef<
