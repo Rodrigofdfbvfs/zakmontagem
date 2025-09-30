@@ -31,7 +31,7 @@ export default function HowItWorksSection() {
             >
               <CardHeader>
                 <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center mb-4 bg-background">
-                  <span className="text-3xl font-bold text-primary">{step.number}</span>
+                  <span className="text-3xl font-bold text-white">{step.number}</span>
                 </div>
                 <CardTitle className="font-bold text-xl">{step.title}</CardTitle>
               </CardHeader>
