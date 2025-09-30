@@ -23,7 +23,7 @@ export default function HowItWorksSection() {
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Como funciona</h2>
           <p className="mt-4 text-lg text-neutral-300 font-light">Processo simples, rápido e sem dor de cabeça.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-16">
           {steps.map((step) => (
             <Card
               key={step.number}
@@ -46,7 +46,7 @@ export default function HowItWorksSection() {
             size="lg"
             asChild
             variant="textured"
-            className="text-lg py-7 px-8"
+            className="text-lg font-bold py-7 px-8"
           >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               Pedir orçamento agora
