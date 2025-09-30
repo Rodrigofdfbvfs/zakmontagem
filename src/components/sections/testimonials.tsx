@@ -44,16 +44,14 @@ export default function TestimonialsSection() {
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-2 h-full">
-                  <Card
-                    className="bg-black text-white h-full flex flex-col justify-center border-neutral-800"
-                  >
+                  <div className="bg-black text-white h-full flex flex-col justify-center border-neutral-800 border rounded-lg p-6">
                     <CardHeader>
                       <CardTitle className="font-bold">{testimonial.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
                       <p className="text-white/90 font-light italic">{testimonial.text}</p>
                     </CardContent>
-                  </Card>
+                  </div>
                 </div>
               </CarouselItem>
             ))}
