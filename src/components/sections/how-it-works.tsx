@@ -27,16 +27,16 @@ export default function HowItWorksSection() {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className="bg-card text-black text-center"
+              className="bg-card text-black text-center p-4 md:p-6"
             >
-              <CardHeader>
-                <div className="mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-4 bg-background">
-                  <span className="text-3xl font-bold text-white">{step.number}</span>
+              <CardHeader className="p-0 md:p-6">
+                <div className="mx-auto w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-4 bg-background">
+                  <span className="text-2xl md:text-3xl font-bold text-white">{step.number}</span>
                 </div>
-                <CardTitle className="font-bold text-xl">{step.title}</CardTitle>
+                <CardTitle className="font-bold text-lg md:text-xl">{step.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-black/90 font-light">{step.description}</p>
+              <CardContent className="p-0 pt-2 md:pt-0">
+                <p className="text-black/90 font-light text-sm md:text-base">{step.description}</p>
               </CardContent>
             </Card>
           ))}
