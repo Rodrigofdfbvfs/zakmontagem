@@ -54,10 +54,10 @@ export default function FaqSection() {
                   />
                 )}
                 <div className="relative z-20">
-                  <AccordionTrigger className="text-left text-lg font-bold text-card-foreground hover:no-underline py-4">
+                  <AccordionTrigger className="text-left text-lg font-bold text-black hover:no-underline py-4">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-base font-light text-card-foreground/90 pb-4">
+                  <AccordionContent className="text-base font-light text-black/90 pb-4">
                     {faq.answer}
                   </AccordionContent>
                 </div>

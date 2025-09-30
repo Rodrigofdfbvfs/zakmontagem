@@ -27,7 +27,7 @@ export default function HowItWorksSection() {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className="bg-card text-card-foreground text-center"
+              className="bg-card text-black text-center"
             >
               <CardHeader>
                 <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center mb-4 bg-background">
@@ -36,7 +36,7 @@ export default function HowItWorksSection() {
                 <CardTitle className="font-bold text-xl">{step.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-card-foreground/90 font-light">{step.description}</p>
+                <p className="text-black/90 font-light">{step.description}</p>
               </CardContent>
             </Card>
           ))}
