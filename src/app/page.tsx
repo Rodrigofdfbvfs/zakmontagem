@@ -8,8 +8,8 @@ import TestimonialsSection from '@/components/sections/testimonials';
 import FaqSection from '@/components/sections/faq';
 import SocialProofSection from '@/components/sections/social-proof';
 
-const SectionDivider = () => (
-  <hr className="w-full border-t border-border/20" />
+const SectionDivider = ({ className }: { className?: string }) => (
+  <hr className={`w-full border-t ${className || 'border-border/20'}`} />
 );
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         <HowItWorksSection />
         <SectionDivider />
         <AboutMeSection />
-        <SectionDivider />
+        <SectionDivider className="border-primary/50" />
         <WhyChooseUsSection />
         <SectionDivider />
         <SocialProofSection />
