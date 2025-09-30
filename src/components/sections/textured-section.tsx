@@ -25,7 +25,7 @@ export const TexturedSection: FC<TexturedSectionProps> = ({ children, className,
           data-ai-hint={image.imageHint}
         />
       )}
-      {showOverlay && <div className="absolute inset-0 bg-black/50 z-10" />}
+      {showOverlay && <div className="absolute inset-0 bg-black/40 z-10" />}
       <div className="relative container mx-auto px-4 py-20 sm:py-28 z-20">
         {children}
       </div>
