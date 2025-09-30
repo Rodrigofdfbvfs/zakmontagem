@@ -33,7 +33,7 @@ export default function FaqSection() {
     <section className="bg-black py-20 sm:py-28">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Perguntas Frequentes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-fill-image">Perguntas Frequentes</h2>
         </div>
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
