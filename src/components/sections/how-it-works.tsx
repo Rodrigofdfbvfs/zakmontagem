@@ -16,9 +16,21 @@ const steps = [
 ];
 
 export default function HowItWorksSection() {
+  const woodTexture = PlaceHolderImages.find(p => p.id === 'wood-texture');
 
   return (
-    <TexturedSection className="bg-black">
+    <div className="relative">
+      {woodTexture && (
+        <Image
+          src={woodTexture.imageUrl}
+          alt={woodTexture.description}
+          fill
+          className="object-cover"
+          data-ai-hint={woodTexture.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-black/80" />
+      <div className="relative container mx-auto px-4 py-20 sm:py-28">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Como funciona</h2>
           <p className="mt-4 text-lg text-neutral-300 font-light">Processo simples, rápido e sem dor de cabeça.</p>
@@ -53,6 +65,7 @@ export default function HowItWorksSection() {
             </Link>
           </Button>
         </div>
-    </TexturedSection>
+      </div>
+    </div>
   );
 }
