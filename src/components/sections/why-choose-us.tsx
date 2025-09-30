@@ -23,7 +23,7 @@ const CheckIcon = () => (
     width="32"
     height="32"
     viewBox="0 0 24 24"
-    className="flex-shrink-0 mt-1"
+    className="flex-shrink-0 mt-1 check-icon"
   >
     <defs>
       <pattern
