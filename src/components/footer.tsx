@@ -15,8 +15,8 @@ export default function Footer() {
           data-ai-hint={heroBg.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-black/80" />
-      <div className="relative z-10 container mx-auto px-4 text-center text-sm text-white">
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="relative z-10 container mx-auto px-4 text-center text-sm text-fill-image">
         © 2025 Zaak montagens – Todos os direitos reservados.
       </div>
     </footer>
