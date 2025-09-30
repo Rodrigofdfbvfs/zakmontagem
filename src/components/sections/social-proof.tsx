@@ -1,8 +1,8 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
+import { PlayCircle } from 'lucide-react';
 
 const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
@@ -13,8 +13,6 @@ const images = [
 ];
 
 export default function SocialProofSection() {
-  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
-
   return (
     <section className="bg-black">
       <div className="container mx-auto px-4 py-20 sm:py-28">
@@ -38,6 +36,15 @@ export default function SocialProofSection() {
             </div>
           ))}
         </div>
+
+        <div className="mt-12">
+            <div className="relative aspect-video max-w-4xl mx-auto rounded-lg overflow-hidden bg-muted flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/50 z-10"></div>
+              <PlayCircle className="h-20 w-20 text-primary z-20" />
+              <p className="absolute bottom-4 text-white z-20 text-lg font-medium">Assista ao vídeo</p>
+            </div>
+        </div>
+
         <div className="text-center mt-12">
           <Button
             size="lg"
