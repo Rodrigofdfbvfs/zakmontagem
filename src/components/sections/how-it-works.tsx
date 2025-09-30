@@ -30,7 +30,7 @@ export default function HowItWorksSection() {
               className="bg-card text-black text-center"
             >
               <CardHeader>
-                <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center mb-4 bg-background">
+                <div className="mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-4 bg-background">
                   <span className="text-3xl font-bold text-white">{step.number}</span>
                 </div>
                 <CardTitle className="font-bold text-xl">{step.title}</CardTitle>
