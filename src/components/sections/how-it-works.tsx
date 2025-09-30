@@ -45,6 +45,7 @@ export default function HowItWorksSection() {
           <Button
             size="lg"
             asChild
+            variant="textured"
             className="text-lg py-7 px-8"
           >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">

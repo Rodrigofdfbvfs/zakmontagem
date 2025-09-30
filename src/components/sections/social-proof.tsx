@@ -43,6 +43,7 @@ export default function SocialProofSection() {
         <Button
           size="lg"
           asChild
+          variant="textured"
           className="text-lg font-bold py-7 px-8"
         >
           <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
