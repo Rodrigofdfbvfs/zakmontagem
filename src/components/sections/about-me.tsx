@@ -22,7 +22,7 @@ export default function AboutMeSection() {
           <div className="text-center md:text-left md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold font-headline text-white mb-6">Sobre Mim</h2>
             <p className="mt-4 text-xl text-neutral-300 font-light max-w-3xl mx-auto md:mx-0">
-              Olá! Sou Isaque, montador de móveis com mais de 5 anos de experiência em Salvador. Minha missão é oferecer um serviço que une agilidade e perfeição, garantindo que seus móveis fiquem exatamente como você imaginou.
+              Olá! Sou Isaque, o especialista por trás da Zaak Montagens. Com mais de 5 anos de dedicação ao universo dos móveis em Salvador, minha paixão é transformar ambientes através de um serviço de montagem que combina precisão técnica, agilidade e um profundo respeito pelo seu espaço. Ao longo da minha carreira, já trabalhei com centenas de projetos, desde a montagem de um simples criado-mudo até a instalação completa de cozinhas planejadas e complexos guarda-roupas. Minha missão vai além de apenas montar: eu me comprometo a entregar um resultado impecável, com cada peça ajustada à perfeição, garantindo a durabilidade e a funcionalidade que você espera. Conte comigo para uma experiência tranquila, profissional e com a garantia de um trabalho bem-feito.
             </p>
           </div>
         </div>
