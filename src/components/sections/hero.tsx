@@ -16,7 +16,8 @@ export default function HeroSection() {
           src={heroBg.imageUrl}
           alt={heroBg.description}
           fill
-          className="object-cover"
+          priority
+          className="object-cover fixed"
           data-ai-hint={heroBg.imageHint}
         />
       )}
