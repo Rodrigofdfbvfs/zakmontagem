@@ -45,7 +45,7 @@ export default function HeroSection() {
         <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl font-light text-neutral-200 drop-shadow-md">
           Com anos de experiência e atenção aos mínimos detalhes, ofereço montagem e desmontagem de móveis com a união perfeita de cuidado e rapidez. Atendo residências e empresas, realizando ajustes em todos os tipos e marcas de móveis, do guarda-roupa ao painel de TV, para que você tenha tranquilidade, confiança e um resultado impecável, sem dor de cabeça.
         </p>
-        <div className="mt-8">
+        <div className="mt-16 md:mt-8">
           <Button
             size="lg"
             asChild
