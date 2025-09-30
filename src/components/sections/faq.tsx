@@ -41,11 +41,11 @@ export default function FaqSection() {
         </div>
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem value={`item-${index}`} key={index} className="bg-card-image border-0 rounded-lg px-6 text-primary-foreground" style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}>
-              <AccordionTrigger className="text-left text-lg font-bold text-black hover:no-underline py-4">
+            <AccordionItem value={`item-${index}`} key={index} className="bg-card border rounded-lg px-6">
+              <AccordionTrigger className="text-left text-lg font-bold text-card-foreground hover:no-underline py-4">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-base font-light text-primary-foreground/90 pb-4">
+              <AccordionContent className="text-base font-light text-card-foreground/90 pb-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

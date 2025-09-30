@@ -16,7 +16,6 @@ const steps = [
 ];
 
 export default function HowItWorksSection() {
-  const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
 
   return (
     <TexturedSection className="bg-black">
@@ -28,19 +27,16 @@ export default function HowItWorksSection() {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className={cn(
-                "bg-card-image border-0 text-center transition-transform duration-300 hover:-translate-y-2 gradient-border-card"
-              )}
-              style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
+              className="bg-card text-card-foreground text-center transition-transform duration-300 hover:-translate-y-2"
             >
               <CardHeader>
-                <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary-foreground flex items-center justify-center mb-4 bg-background">
+                <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center mb-4 bg-background">
                   <span className="text-3xl font-bold text-primary">{step.number}</span>
                 </div>
-                <CardTitle className="text-black font-bold text-xl">{step.title}</CardTitle>
+                <CardTitle className="font-bold text-xl">{step.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-primary-foreground/90 font-light">{step.description}</p>
+                <p className="text-card-foreground/90 font-light">{step.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,10 +45,7 @@ export default function HowItWorksSection() {
           <Button
             size="lg"
             asChild
-            className={cn(
-              "text-lg py-7 px-8 bg-card-image cta-shine-effect",
-            )}
-            style={{ '--card-bg-image': `url(${cardBg?.imageUrl})` } as React.CSSProperties}
+            className="text-lg py-7 px-8 cta-shine-effect"
           >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               Pedir orçamento agora
