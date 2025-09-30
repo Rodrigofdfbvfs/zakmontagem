@@ -7,6 +7,12 @@
       "imageHint": "furniture assembly"
     },
     {
+      "id": "hero-background-mobile",
+      "description": "Homem montando um móvel de madeira para mobile.",
+      "imageUrl": "https://i.imgur.com/45CgAyT.png",
+      "imageHint": "furniture assembly"
+    },
+    {
       "id": "about-me-image",
       "description": "Retrato de um montador de móveis profissional sorrindo.",
       "imageUrl": "https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkxNDQyMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",

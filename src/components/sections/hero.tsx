@@ -8,17 +8,28 @@ const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=OlÃ¡! Gostaria de um orÃ
 
 export default function HeroSection() {
   const heroBg = PlaceHolderImages.find(p => p.id === 'hero-background');
+  const heroBgMobile = PlaceHolderImages.find(p => p.id === 'hero-background-mobile');
 
   return (
-    <section className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-white overflow-hidden bg-background">
+    <section className="relative h-[80vh] min-h-[500px] w-full flex items-center justify-center text-white overflow-hidden bg-background">
       {heroBg && (
         <Image
           src={heroBg.imageUrl}
           alt={heroBg.description}
           fill
           priority
-          className="object-cover fixed"
+          className="object-cover fixed hidden md:block"
           data-ai-hint={heroBg.imageHint}
+        />
+      )}
+      {heroBgMobile && (
+        <Image
+          src={heroBgMobile.imageUrl}
+          alt={heroBgMobile.description}
+          fill
+          priority
+          className="object-cover fixed md:hidden"
+          data-ai-hint={heroBgMobile.imageHint}
         />
       )}
       <div className="absolute inset-0 bg-black/50" />
