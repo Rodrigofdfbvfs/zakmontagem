@@ -35,7 +35,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50 hidden md:block" />
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 
-          className="text-xl md:text-2xl font-bold tracking-wider drop-shadow-lg text-fill-image mb-4 -mt-8"
+          className="text-xl md:text-2xl font-bold tracking-wider drop-shadow-lg text-fill-image shimmer-effect mb-4 -mt-8"
         >
           ZAAK MONTAGENS
         </h2>
