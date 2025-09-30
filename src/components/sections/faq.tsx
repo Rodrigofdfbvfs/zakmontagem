@@ -53,7 +53,6 @@ export default function FaqSection() {
                     data-ai-hint={cardBg.imageHint}
                   />
                 )}
-                <div className="absolute inset-0 bg-black/60 z-10" />
                 <div className="relative z-20">
                   <AccordionTrigger className="text-left text-lg font-bold text-card-foreground hover:no-underline py-4">
                     {faq.question}

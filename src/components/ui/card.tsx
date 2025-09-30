@@ -26,7 +26,6 @@ const Card = React.forwardRef<
           data-ai-hint={cardBg.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-black/60 z-10" />
       <div className="relative z-20 h-full">{children}</div>
     </div>
   )
