@@ -39,7 +39,7 @@ export default function HeroSection() {
         >
           ZAAK MONTAGENS
         </h2>
-        <h1 className="mt-2 text-4xl md:text-6xl font-bold font-headline leading-tight drop-shadow-lg">
+        <h1 className="mt-2 text-4xl md:text-5xl font-bold font-headline leading-tight drop-shadow-lg">
           Seu móvel montado com <span className="text-fill-image">agilidade e experiência</span> em Salvador, Bahia.
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl font-light text-neutral-200 drop-shadow-md">
