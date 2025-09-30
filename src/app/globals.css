@@ -26,19 +26,19 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: -200%;
+    left: -220%;
     width: 260%;
     height: 100%;
     background: linear-gradient(
       120deg,
-      rgba(255, 215, 0, 0.05) 0%,
-      rgba(255, 223, 80, 0.25) 25%,
-      rgba(255, 235, 150, 0.45) 50%,
-      rgba(255, 223, 80, 0.25) 75%,
-      rgba(255, 215, 0, 0.05) 100%
+      rgba(255, 215, 0, 0.15) 0%,
+      rgba(255, 223, 50, 0.4) 25%,
+      rgba(255, 230, 80, 0.75) 50%,
+      rgba(255, 223, 50, 0.4) 75%,
+      rgba(255, 215, 0, 0.15) 100%
     );
     transform: skewX(-25deg);
-    animation: shimmer 5s ease-in-out infinite;
+    animation: shimmer 4s ease-in-out infinite;
     z-index: 2;
     pointer-events: none;
     mix-blend-mode: screen;
@@ -47,10 +47,10 @@ body {
 
 @keyframes shimmer {
   0% {
-    left: -200%;
+    left: -220%;
   }
   100% {
-    left: 200%;
+    left: 220%;
   }
 }
 
