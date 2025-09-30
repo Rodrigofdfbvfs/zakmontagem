@@ -9,7 +9,7 @@ export default function AboutMeSection() {
   return (
     <TexturedSection className="bg-black">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[450px] w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg gradient-border-card">
+          <div className="relative h-[450px] w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-lg">
             {aboutMeImage && (
               <Image
                 src={aboutMeImage.imageUrl}

@@ -16,7 +16,7 @@ export default function HeroSection() {
           src={heroBg.imageUrl}
           alt={heroBg.description}
           fill
-          className="object-cover blur-sm"
+          className="object-cover"
           data-ai-hint={heroBg.imageHint}
           priority
         />
@@ -37,7 +37,7 @@ export default function HeroSection() {
           <Button
             size="lg"
             asChild
-            className="text-lg font-bold py-7 px-8 cta-shine-effect"
+            className="text-lg font-bold py-7 px-8"
           >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               Solicite seu Orçamento Agora

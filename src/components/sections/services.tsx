@@ -24,7 +24,7 @@ export default function ServicesSection() {
         {services.map((service) => (
           <Card
             key={service.title}
-            className="bg-card text-card-foreground rounded-lg shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1"
+            className="bg-card text-card-foreground rounded-lg shadow-lg"
           >
             <CardHeader>
               <CardTitle className="font-bold font-headline text-2xl">{service.title}</CardTitle>

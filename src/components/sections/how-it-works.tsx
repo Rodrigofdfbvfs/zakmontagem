@@ -27,7 +27,7 @@ export default function HowItWorksSection() {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className="bg-card text-card-foreground text-center transition-transform duration-300 hover:-translate-y-2"
+              className="bg-card text-card-foreground text-center"
             >
               <CardHeader>
                 <div className="mx-auto w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center mb-4 bg-background">
@@ -45,7 +45,7 @@ export default function HowItWorksSection() {
           <Button
             size="lg"
             asChild
-            className="text-lg py-7 px-8 cta-shine-effect"
+            className="text-lg py-7 px-8"
           >
             <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               Pedir orçamento agora
