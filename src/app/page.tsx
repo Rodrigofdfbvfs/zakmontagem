@@ -18,11 +18,11 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <SectionDivider />
-        <AboutMeSection />
-        <SectionDivider />
         <ServicesSection />
         <SectionDivider />
         <HowItWorksSection />
+        <SectionDivider />
+        <AboutMeSection />
         <SectionDivider />
         <WhyChooseUsSection />
         <SectionDivider />
