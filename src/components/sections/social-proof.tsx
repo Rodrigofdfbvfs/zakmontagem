@@ -17,7 +17,7 @@ export default function SocialProofSection() {
     <section className="bg-black">
       <div className="container mx-auto px-4 py-20 sm:py-28">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-fill-image">
             Clientes satisfeitos, móveis montados com perfeição
           </h2>
           <p className="mt-4 text-lg text-neutral-300 font-light max-w-3xl mx-auto">
