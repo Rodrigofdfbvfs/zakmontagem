@@ -16,7 +16,7 @@ const steps = [
 ];
 
 export default function HowItWorksSection() {
-  const woodTexture = PlaceHolderImages.find(p => p.id === 'wood-texture');
+  const woodTexture = PlaceHolderImages.find(p => p.id === 'how-it-works-background');
 
   return (
     <div className="relative">
@@ -29,7 +29,7 @@ export default function HowItWorksSection() {
           data-ai-hint={woodTexture.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-black/90" />
+      <div className="absolute inset-0 bg-black/80" />
       <div className="relative container mx-auto px-4 py-20 sm:py-28">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Como funciona</h2>

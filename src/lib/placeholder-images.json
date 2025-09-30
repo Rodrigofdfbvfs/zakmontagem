@@ -25,6 +25,12 @@
       "imageHint": "light wood"
     },
     {
+      "id": "how-it-works-background",
+      "description": "Homem montando um móvel de madeira.",
+      "imageUrl": "https://i.imgur.com/45CgAyT.png",
+      "imageHint": "furniture assembly"
+    },
+    {
       "id": "services-background",
       "description": "Homem montando um móvel.",
       "imageUrl": "https://i.imgur.com/8Y0d9uB.png",
