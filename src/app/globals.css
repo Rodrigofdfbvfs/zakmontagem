@@ -6,6 +6,17 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+@layer utilities {
+  .text-fill-image {
+    background-image: url('https://i.imgur.com/Mh0zntg.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 0%; /* #000000 */
