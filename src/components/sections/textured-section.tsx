@@ -23,7 +23,6 @@ export const TexturedSection: FC<TexturedSectionProps> = ({ children, className,
           fill
           className={cn(
             "object-cover z-0",
-            !showOverlay && "opacity-20"
           )}
           data-ai-hint={image.imageHint}
         />
