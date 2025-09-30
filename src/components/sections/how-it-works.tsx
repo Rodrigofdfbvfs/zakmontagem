@@ -27,7 +27,7 @@ export default function HowItWorksSection() {
           {steps.map((step) => (
             <Card
               key={step.number}
-              className="bg-card text-black text-center p-4 md:p-6"
+              className="bg-card text-black text-center p-4 md:p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <CardHeader className="p-0 md:p-6">
                 <div className="mx-auto w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mb-4 bg-background">
