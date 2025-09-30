@@ -22,7 +22,7 @@ export default function ServicesSection() {
           {services.map((service) => (
             <Card
               key={service.title}
-              className="bg-card text-black rounded-lg shadow-lg"
+              className="bg-card text-black rounded-lg shadow-lg text-center sm:text-left"
             >
               <CardHeader>
                 <CardTitle className="font-bold font-headline text-2xl">{service.title}</CardTitle>
