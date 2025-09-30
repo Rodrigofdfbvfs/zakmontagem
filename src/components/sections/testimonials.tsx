@@ -23,9 +23,9 @@ const testimonials = [
 export default function TestimonialsSection() {
   const cardBg = PlaceHolderImages.find(p => p.id === 'card-background');
   return (
-    <TexturedSection className="bg-black">
+    <TexturedSection showOverlay={false}>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">O que meus clientes dizem</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-black">O que meus clientes dizem</h2>
         </div>
         <Carousel
           plugins={[
