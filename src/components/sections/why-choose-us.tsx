@@ -1,5 +1,3 @@
-import { TexturedSection } from "./textured-section";
-
 const benefits = [
   {
     title: "Pontualidade real",
@@ -51,24 +49,26 @@ const CheckIcon = () => (
 
 export default function WhyChooseUsSection() {
   return (
-    <TexturedSection className="bg-black">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Por que escolher meu serviço?</h2>
-        <p className="mt-4 text-lg text-neutral-300 font-light">Compromisso com qualidade, segurança e praticidade em cada montagem.</p>
+    <section className="bg-black">
+      <div className="container mx-auto px-4 py-20 sm:py-28">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-white">Por que escolher meu serviço?</h2>
+          <p className="mt-4 text-lg text-neutral-300 font-light">Compromisso com qualidade, segurança e praticidade em cada montagem.</p>
+        </div>
+        <div className="max-w-4xl mx-auto">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+            {benefits.map((benefit) => (
+              <li key={benefit.title} className="flex items-start gap-4">
+                <CheckIcon />
+                <div>
+                  <h3 className="text-xl font-bold text-white">{benefit.title}</h3>
+                  <p className="text-neutral-300 font-light mt-1">{benefit.description}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="max-w-4xl mx-auto">
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-          {benefits.map((benefit) => (
-            <li key={benefit.title} className="flex items-start gap-4">
-              <CheckIcon />
-              <div>
-                <h3 className="text-xl font-bold text-white">{benefit.title}</h3>
-                <p className="text-neutral-300 font-light mt-1">{benefit.description}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </TexturedSection>
+    </section>
   );
 }

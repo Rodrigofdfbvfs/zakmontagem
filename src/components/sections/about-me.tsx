@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { TexturedSection } from "./textured-section";
-import { cn } from '@/lib/utils';
 
 export default function AboutMeSection() {
   const aboutMeImage = PlaceHolderImages.find(p => p.id === 'about-me-image');
 
   return (
-    <TexturedSection className="bg-black">
+    <section className="bg-black">
+      <div className="container mx-auto px-4 py-20 sm:py-28">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="relative h-[450px] w-full max-w-sm md:w-1/2 mx-auto rounded-lg overflow-hidden shadow-lg flex-shrink-0">
             {aboutMeImage && (
@@ -27,6 +26,7 @@ export default function AboutMeSection() {
             </p>
           </div>
         </div>
-    </TexturedSection>
+      </div>
+    </section>
   );
 }
