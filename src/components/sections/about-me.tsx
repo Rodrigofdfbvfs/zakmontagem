@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { cn } from '@/lib/utils';
 
 export default function AboutMeSection() {
   const aboutMeImage = PlaceHolderImages.find(p => p.id === 'about-me-image');
@@ -20,7 +21,7 @@ export default function AboutMeSection() {
             )}
           </div>
           <div className="text-center md:w-3/4">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline text-fill-image mb-6">Sobre Mim</h2>
+            <h2 className={cn("text-3xl md:text-4xl font-bold font-headline text-fill-image mb-6 text-glow")}>Sobre Mim</h2>
             <p className="mt-4 text-lg text-neutral-300 font-light max-w-3xl mx-auto">
               Olá! Sou Isaque, especialista em montagem de móveis. Com mais de 5 anos de experiência, minha paixão é transformar ambientes com precisão e agilidade, garantindo um resultado impecável.
             </p>

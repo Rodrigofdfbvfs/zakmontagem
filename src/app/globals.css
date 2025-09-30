@@ -54,6 +54,19 @@ body {
     filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.7))
       drop-shadow(0 0 12px rgba(255, 223, 80, 0.6)); /* brilho dourado */
   }
+
+  .text-glow {
+    display: inline-block;
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+    cursor: default;
+  }
+
+  .text-glow:hover {
+    transform: scale(1.08);
+    text-shadow: 0 0 6px rgba(255, 215, 0, 0.6),
+      0 0 12px rgba(255, 223, 80, 0.5),
+      0 0 18px rgba(255, 230, 100, 0.4);
+  }
 }
 
 @keyframes shimmer {
