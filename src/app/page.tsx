@@ -25,7 +25,7 @@ export default function Home() {
         <AboutMeSection />
         <SectionDivider className="border-primary/50" />
         <WhyChooseUsSection />
-        <SectionDivider />
+        <SectionDivider className="border-primary/50" />
         <SocialProofSection />
         <SectionDivider />
         <TestimonialsSection />
