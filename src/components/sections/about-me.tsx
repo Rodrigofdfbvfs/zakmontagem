@@ -29,9 +29,9 @@ export default function AboutMeSection() {
               Olá! Sou Isaque, especialista em montagem de móveis com 7 anos de experiência. Minha paixão é transformar ambientes com precisão e agilidade. Já colaborei com grandes nomes como Magazine Luiza, Casas Bahia, MadeiraMadeira, Baianão móveis e Ubaratão, garantindo sempre um resultado impecável.
             </p>
             <div className="mt-6 flex items-center justify-center md:justify-start">
-              <Link href="https://www.instagram.com/zakmontagem.ofc" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-primary transition-colors">
+              <Link href="https://www.instagram.com/zakmontagem.ofc" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:brightness-125 transition-all">
                 <Instagram className="h-6 w-6" />
-                <span className="font-medium">zakmontagem.ofc</span>
+                <span className="font-medium text-sm">zakmontagem.ofc</span>
               </Link>
             </div>
           </div>
