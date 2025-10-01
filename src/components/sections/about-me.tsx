@@ -31,7 +31,7 @@ export default function AboutMeSection() {
             <div className="mt-6 flex items-center justify-center md:justify-start">
               <Link href="https://www.instagram.com/zakmontagem.ofc" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:brightness-125 transition-all">
                 <Instagram className="h-6 w-6" />
-                <span className="font-medium text-sm">zakmontagem.ofc</span>
+                <span className="font-medium text-sm text-fill-image">zakmontagem.ofc</span>
               </Link>
             </div>
           </div>
