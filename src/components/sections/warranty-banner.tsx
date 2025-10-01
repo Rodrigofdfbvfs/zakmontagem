@@ -10,7 +10,7 @@ const WarrantyBanner = ({ className }: { className?: string }) => {
   );
 
   return (
-    <section className={cn("bg-primary text-primary-foreground py-3 overflow-hidden", className)}>
+    <section className={cn("bg-[url('https://i.imgur.com/JCMImwM.png')] bg-cover bg-center text-primary-foreground py-3 overflow-hidden", className)}>
       <div className="flex animate-marquee">
         <div className="flex min-w-full flex-shrink-0 items-center justify-around">
           {textContent}
