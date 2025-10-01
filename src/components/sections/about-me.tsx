@@ -9,7 +9,7 @@ export default function AboutMeSection() {
     <section className="bg-black py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden">
+          <div className="relative w-full h-80 md:h-96">
             {aboutMeImage && (
               <Image
                 src={aboutMeImage.imageUrl}
