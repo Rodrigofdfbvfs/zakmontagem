@@ -56,8 +56,8 @@ export default function TestimonialsSection() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="text-primary border-primary hover:bg-primary hover:text-primary-foreground disabled:border-muted disabled:text-muted" />
-          <CarouselNext className="text-primary border-primary hover:bg-primary hover:text-primary-foreground disabled:border-muted disabled:text-muted" />
+          <CarouselPrevious className="text-primary border-primary hover:bg-primary hover:text-primary-foreground disabled:border-muted disabled:text-muted hidden md:flex" />
+          <CarouselNext className="text-primary border-primary hover:bg-primary hover:text-primary-foreground disabled:border-muted disabled:text-muted hidden md:flex" />
         </Carousel>
     </TexturedSection>
   );
