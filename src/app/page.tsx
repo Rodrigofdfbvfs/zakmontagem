@@ -21,7 +21,9 @@ export default function Home() {
         <ServicesSection />
         <SectionDivider />
         <HowItWorksSection />
-        <WarrantyBanner />
+        <div className="w-full overflow-hidden">
+          <WarrantyBanner />
+        </div>
         <AboutMeSection />
         <SectionDivider className="border-primary/50" />
         <WhyChooseUsSection />
