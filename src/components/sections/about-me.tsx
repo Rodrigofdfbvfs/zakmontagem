@@ -15,7 +15,7 @@ export default function AboutMeSection() {
                 src={aboutMeImage.imageUrl}
                 alt={aboutMeImage.description}
                 fill
-                className="object-cover rounded-full"
+                className="object-cover rounded-lg"
                 data-ai-hint={aboutMeImage.imageHint}
               />
             )}
