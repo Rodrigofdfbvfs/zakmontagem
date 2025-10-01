@@ -3,6 +3,7 @@ import HeroSection from '@/components/sections/hero';
 import AboutMeSection from '@/components/sections/about-me';
 import ServicesSection from '@/components/sections/services';
 import HowItWorksSection from '@/components/sections/how-it-works';
+import WarrantyBanner from '@/components/sections/warranty-banner';
 import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import TestimonialsSection from '@/components/sections/testimonials';
 import FaqSection from '@/components/sections/faq';
@@ -20,7 +21,7 @@ export default function Home() {
         <ServicesSection />
         <SectionDivider />
         <HowItWorksSection />
-        <SectionDivider />
+        <WarrantyBanner />
         <AboutMeSection />
         <SectionDivider className="border-primary/50" />
         <WhyChooseUsSection />
