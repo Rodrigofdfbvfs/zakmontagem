@@ -23,7 +23,7 @@ export default function AboutMeSection() {
           <div className="text-center md:w-3/4">
             <h2 className={cn("text-3xl md:text-4xl font-bold font-headline text-fill-image mb-6")}>Sobre Mim</h2>
             <p className="mt-4 text-lg text-neutral-300 font-light max-w-3xl mx-auto">
-              Olá! Sou Isaque, especialista em montagem de móveis com 7 anos de experiência. Minha paixão é transformar ambientes com precisão e agilidade. Já colaborei com grandes nomes como Magazine Luiza, Casas Bahia, MadeiraMadeira, Lojas Baianão e Insinuante, garantindo sempre um resultado impecável.
+              Olá! Sou Isaque, especialista em montagem de móveis com 7 anos de experiência. Minha paixão é transformar ambientes com precisão e agilidade. Já colaborei com grandes nomes como Magazine Luiza, Casas Bahia, MadeiraMadeira, Lojas Baianão e Ubaratão, garantindo sempre um resultado impecável.
             </p>
           </div>
         </div>
