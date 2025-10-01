@@ -6,7 +6,6 @@ import HowItWorksSection from '@/components/sections/how-it-works';
 import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import TestimonialsSection from '@/components/sections/testimonials';
 import FaqSection from '@/components/sections/faq';
-import SocialProofSection from '@/components/sections/social-proof';
 
 const SectionDivider = ({ className }: { className?: string }) => (
   <hr className={`w-full border-t ${className || 'border-border/20'}`} />
@@ -26,8 +25,6 @@ export default function Home() {
         <SectionDivider className="border-primary/50" />
         <WhyChooseUsSection />
         <SectionDivider className="border-primary/50" />
-        <SocialProofSection />
-        <SectionDivider />
         <TestimonialsSection />
         <SectionDivider />
         <FaqSection />
