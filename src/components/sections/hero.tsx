@@ -43,7 +43,7 @@ export default function HeroSection() {
           Seu móvel montado com <span className="text-fill-image">agilidade e experiência</span> em Salvador, Bahia.
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl font-light text-neutral-200 drop-shadow-md">
-          Com anos de experiência e atenção aos mínimos detalhes, ofereço montagem e desmontagem de móveis com a união perfeita de cuidado e rapidez. Atendo residências e empresas, realizando ajustes em todos os tipos e marcas de móveis, do guarda-roupa ao painel de TV, para que você tenha tranquilidade, confiança e um resultado impecável, sem dor de cabeça.
+          Ofereço montagem e desmontagem de móveis com rapidez e cuidado, atendendo residências e empresas. Realizo ajustes em todos os tipos e marcas de móveis, do guarda-roupa ao painel de TV, garantindo tranquilidade, confiança e um resultado impecável.
         </p>
         <div className="mt-16 md:mt-8">
           <Button
