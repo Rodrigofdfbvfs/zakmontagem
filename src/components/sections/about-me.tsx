@@ -19,6 +19,7 @@ export default function AboutMeSection() {
                 data-ai-hint={aboutMeImage.imageHint}
               />
             )}
+            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black to-transparent" />
           </div>
           <div className="text-center md:text-left">
             <h2 className={cn("text-3xl md:text-4xl font-bold font-headline text-fill-image mb-6")}>Sobre Mim</h2>
