@@ -9,14 +9,13 @@ export default function AboutMeSection() {
     <section className="bg-black py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div className="relative h-[240px] w-full max-w-[240px] md:w-1/4 mx-auto rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+          <div className="relative h-64 w-64 md:h-72 md:w-72 flex-shrink-0">
             {aboutMeImage && (
               <Image
                 src={aboutMeImage.imageUrl}
                 alt={aboutMeImage.description}
-                width={240}
-                height={240}
-                className="object-cover"
+                fill
+                className="object-cover rounded-full"
                 data-ai-hint={aboutMeImage.imageHint}
               />
             )}
