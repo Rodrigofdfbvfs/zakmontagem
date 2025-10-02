@@ -2,6 +2,14 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const WHATSAPP_LINK = 'https://wa.me/557184808667?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
@@ -25,18 +33,38 @@ export default function SocialProofSection() {
             Confira alguns registros reais de trabalhos realizados, que comprovam a qualidade, a agilidade e o cuidado em cada montagem.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-4 py-8">
-          {images.map((image) => (
-            <div key={image.id} className="relative h-[280px] w-[200px] overflow-hidden rounded-lg shadow-lg">
-               <Image 
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover"
-               />
-            </div>
-          ))}
-        </div>
+        <Carousel
+          plugins={[
+            Autoplay({
+              delay: 3000,
+              stopOnInteraction: true,
+            }),
+          ]}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-4xl mx-auto"
+        >
+          <CarouselContent>
+            {images.map((image) => (
+              <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3 flex justify-center">
+                <div className="p-1">
+                  <div className="relative h-[400px] w-[300px] overflow-hidden rounded-lg shadow-lg">
+                    <Image 
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        className="object-cover"
+                    />
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="text-primary border-primary hover:bg-primary hover:text-primary-foreground disabled:border-muted disabled:text-muted hidden md:flex" />
+          <CarouselNext className="text-primary border-primary hover:bg-primary hover:text-primary-foreground disabled:border-muted disabled:text-muted hidden md:flex" />
+        </Carousel>
 
         <div className="text-center mt-12">
           <Button
