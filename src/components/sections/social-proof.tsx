@@ -2,14 +2,15 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { PlayCircle } from 'lucide-react';
 
 const WHATSAPP_LINK = 'https://wa.me/557184808667?text=Olá! Gostaria de um orçamento para montagem de móveis.';
 
 const images = [
   { id: 'ozLMR53', src: 'https://i.imgur.com/ozLMR53.jpeg', alt: 'Montagem de móvel 1' },
   { id: 'GvtSsiw', src: 'https://i.imgur.com/GvtSsiw.jpeg', alt: 'Montagem de móvel 2' },
-  { id: 'egzXfSu', src: 'https://i.imgur.com/egzXfSu.jpeg', alt: 'Montagem de móvel 3' },
+  { id: 'cMxRW2e', src: 'https://i.imgur.com/cMxRW2e.jpeg', alt: 'Montagem de móvel 4' },
+  { id: 'D86NIlw', src: 'https://i.imgur.com/D86NIlw.jpeg', alt: 'Montagem de móvel 5' },
+  { id: '9hFH90D', src: 'https://i.imgur.com/9hFH90D.jpeg', alt: 'Montagem de móvel 6' },
 ];
 
 export default function SocialProofSection() {
@@ -24,7 +25,7 @@ export default function SocialProofSection() {
             Confira alguns registros reais de trabalhos realizados, que comprovam a qualidade, a agilidade e o cuidado em cada montagem.
           </p>
         </div>
-        <div className="flex justify-center items-center gap-4 py-8">
+        <div className="flex flex-wrap justify-center items-center gap-4 py-8">
           {images.map((image) => (
             <div key={image.id} className="relative h-[280px] w-[200px] overflow-hidden rounded-lg shadow-lg">
                <Image 
