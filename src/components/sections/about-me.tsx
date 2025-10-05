@@ -26,7 +26,7 @@ export default function AboutMeSection() {
           <div className="text-center">
             <h2 className={cn("text-3xl md:text-4xl font-bold font-headline text-fill-image mb-6")}>Sobre Mim</h2>
             <p className="mt-4 text-lg text-neutral-300 font-light max-w-3xl mx-auto">
-              Olá! Sou Isaque, especialista em montagem de móveis com 7 anos de experiência. Minha paixão é transformar ambientes com precisão e agilidade. Já colaborei com grandes nomes como Magazine Luiza, Casas Bahia, MadeiraMadeira, Baianão móveis e Ubaratão, garantindo sempre um resultado impecável.
+              Olá! Sou Isaac, especialista em montagem de móveis com 7 anos de experiência. Minha paixão é transformar ambientes com precisão e agilidade. Já colaborei com grandes nomes como Magazine Luiza, Casas Bahia, MadeiraMadeira, Baianão móveis e Ubaratão, garantindo sempre um resultado impecável.
             </p>
             <div className="mt-6 flex items-center justify-center">
               <Link href="https://www.instagram.com/zakmontagem.ofc" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:brightness-125 transition-all">
