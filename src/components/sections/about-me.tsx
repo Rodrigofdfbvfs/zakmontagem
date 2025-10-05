@@ -17,7 +17,7 @@ export default function AboutMeSection() {
                 src={aboutMeImage.imageUrl}
                 alt={aboutMeImage.description}
                 fill
-                className="object-cover"
+                className="object-cover md:object-contain"
                 data-ai-hint={aboutMeImage.imageHint}
               />
             )}
