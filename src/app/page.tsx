@@ -8,6 +8,7 @@ import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import TestimonialsSection from '@/components/sections/testimonials';
 import FaqSection from '@/components/sections/faq';
 import SocialProofSection from '@/components/sections/social-proof';
+import DisassemblySection from '@/components/sections/disassembly-section';
 
 const SectionDivider = ({ className }: { className?: string }) => (
   <hr className={`w-full border-t ${className || 'border-border/20'}`} />
@@ -20,6 +21,7 @@ export default function Home() {
         <HeroSection />
         <SectionDivider />
         <ServicesSection />
+        <DisassemblySection />
         <SectionDivider />
         <HowItWorksSection />
         <div className="w-full overflow-hidden">
