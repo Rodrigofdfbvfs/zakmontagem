@@ -21,7 +21,6 @@ export default function Home() {
         <HeroSection />
         <SectionDivider />
         <ServicesSection />
-        <DisassemblySection />
         <SectionDivider />
         <HowItWorksSection />
         <div className="w-full overflow-hidden">
@@ -29,6 +28,7 @@ export default function Home() {
         </div>
         <AboutMeSection />
         <SectionDivider className="border-primary/50" />
+        <DisassemblySection />
         <WhyChooseUsSection />
         <SectionDivider className="border-primary/50" />
         <SocialProofSection />
