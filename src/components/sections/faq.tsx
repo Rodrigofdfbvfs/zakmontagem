@@ -11,10 +11,6 @@ const faqs = [
     answer: "O tempo varia de acordo com o tipo de móvel, mas a maioria das montagens é concluída no mesmo dia, com rapidez e eficiência."
   },
   {
-    question: "Vocês desmontam e montam móveis em mudanças?",
-    answer: "Sim. Faço desmontagem e montagem no novo local, garantindo a integridade do seu móvel durante o processo."
-  },
-  {
     question: "Atendem todos os tipos de móveis e marcas?",
     answer: "Sim. Tenho experiência em montagem de móveis residenciais e corporativos, de todas as marcas e modelos, dos mais simples aos mais complexos."
   },
