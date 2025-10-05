@@ -30,12 +30,12 @@ export default function DisassemblySection() {
           {disassemblyServices.map((service) => (
             <Card
               key={service.title}
-              className="bg-card text-white rounded-lg shadow-lg text-center p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="text-black rounded-lg shadow-lg text-center p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <CardHeader className="flex flex-col items-center gap-4">
                 {service.icon}
-                <CardTitle className="font-bold font-headline text-2xl text-white">{service.title}</CardTitle>
-                <CardDescription className="text-white/90 font-light pt-2">{service.description}</CardDescription>
+                <CardTitle className="font-bold font-headline text-2xl text-black">{service.title}</CardTitle>
+                <CardDescription className="text-black/90 font-light pt-2">{service.description}</CardDescription>
               </CardHeader>
             </Card>
           ))}
