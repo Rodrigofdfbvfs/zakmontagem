@@ -19,6 +19,11 @@ const images = [
   { id: 'cMxRW2e', src: 'https://i.imgur.com/cMxRW2e.jpeg', alt: 'Montagem de móvel 4' },
   { id: 'D86NIlw', src: 'https://i.imgur.com/D86NIlw.jpeg', alt: 'Montagem de móvel 5' },
   { id: '9hFH90D', src: 'https://i.imgur.com/9hFH90D.jpeg', alt: 'Montagem de móvel 6' },
+  { id: 'sp1SoTD', src: 'https://i.imgur.com/sp1SoTD.jpeg', alt: 'Montagem de móvel 7' },
+  { id: 'vHkMCiy', src: 'https://i.imgur.com/vHkMCiy.jpeg', alt: 'Montagem de móvel 8' },
+  { id: 'BKm6RuQ', src: 'https://i.imgur.com/BKm6RuQ.jpeg', alt: 'Montagem de móvel 9' },
+  { id: 'wxarxZg', src: 'https://i.imgur.com/wxarxZg.jpeg', alt: 'Montagem de móvel 10' },
+  { id: 'GgNdXNk', src: 'https://i.imgur.com/GgNdXNk.jpeg', alt: 'Montagem de móvel 11' },
 ];
 
 export default function SocialProofSection() {
