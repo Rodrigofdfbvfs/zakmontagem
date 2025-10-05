@@ -3,12 +3,12 @@ import { Move, Wrench } from "lucide-react";
 
 const disassemblyServices = [
   {
-    icon: <Move className="h-12 w-12 text-primary" />,
+    icon: <Move className="h-12 w-12 text-black" />,
     title: "Mudanças Residenciais e Comerciais",
     description: "Desmontamos seus móveis com cuidado e técnica para que cheguem intactos ao novo endereço. Embalamos as peças e parafusos para uma montagem perfeita depois."
   },
   {
-    icon: <Wrench className="h-12 w-12 text-primary" />,
+    icon: <Wrench className="h-12 w-12 text-black" />,
     title: "Reformas de Ambientes",
     description: "Precisa tirar os móveis para pintar ou reformar o cômodo? Fazemos a desmontagem e, quando a obra acabar, montamos tudo de volta, deixando o ambiente renovado."
   },
