@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
 
-const WHATSAPP_LINK = 'https://wa.me/557184808667?text=Olá! Gostaria de um orçamento para montagem de móveis.';
+const WHATSAPP_LINK = 'https://wa.me/5571984808667';
 
 export default function HeroSection() {
   const heroBg = PlaceHolderImages.find(p => p.id === 'hero-background');

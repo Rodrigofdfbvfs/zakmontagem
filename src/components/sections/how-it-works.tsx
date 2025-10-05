@@ -6,7 +6,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { TexturedSection } from "./textured-section";
 import { cn } from '@/lib/utils';
 
-const WHATSAPP_LINK = 'https://wa.me/557184808667?text=Olá! Gostaria de um orçamento para montagem de móveis.';
+const WHATSAPP_LINK = 'https://wa.me/5571984808667';
 
 const steps = [
   { number: "1", title: "Solicite seu orçamento", description: "Envie fotos ou lista dos móveis pelo WhatsApp. Responderei rápido com valores e disponibilidade." },

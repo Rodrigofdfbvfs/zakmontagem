@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-const WHATSAPP_LINK = 'https://wa.me/557184808667?text=Olá! Gostaria de um orçamento para montagem de móveis.';
+const WHATSAPP_LINK = 'https://wa.me/5571984808667';
 
 const images = [
   { id: 'ozLMR53', src: 'https://i.imgur.com/ozLMR53.jpeg', alt: 'Montagem de móvel 1' },
